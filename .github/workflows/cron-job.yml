@@ -32,6 +32,7 @@ jobs:
           pip install -r requirements.txt
       - name: ls_show
         run: |
+          python yanbao_rss.py
           python main.py
           ls -al docs/
         env:

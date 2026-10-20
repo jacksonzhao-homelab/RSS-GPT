@@ -1,0 +1,12 @@
+------------------------------------------------------
+Started: 2026-10-20 22:51:08.651492
+Existing_entries: 4
+Fetching from file://docs/yanbao.xml
+append_entries: 0
+error when rendering xml, skip docs/yanbao
+------------------------------------------------------
+Started: 2026-10-20 22:52:09.684323
+Existing_entries: 4
+Fetching from file://docs/yanbao.xml
+append_entries: 0
+Finish: 2026-10-20 22:52:09.695660

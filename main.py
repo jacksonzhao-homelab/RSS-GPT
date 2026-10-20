@@ -40,6 +40,11 @@ def fetch_feed(url, log_file):
     try:
         ua = UserAgent()
         headers['User-Agent'] = ua.random.strip()
+        if url.startswith('file://'):
+            # 本地生成的 RSS（如 yanbao_rss.py 产出的 docs/yanbao.xml）
+            with open(url[7:], 'r') as f:
+                feed = feedparser.parse(f.read())
+            return {'feed': feed, 'status': 'success'}
         response = requests.get(url, headers=headers, timeout=30)
         if response.status_code == 200:
             feed = feedparser.parse(response.text)
