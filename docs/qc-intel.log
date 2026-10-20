@@ -1,0 +1,6 @@
+------------------------------------------------------
+Started: 2026-10-20 14:10:04.036292
+Existing_entries: 0
+Fetching from https://www.quantconnect.com/research.posts.sitemap.xml
+append_entries: 0
+error when rendering xml, skip docs/qc-intel

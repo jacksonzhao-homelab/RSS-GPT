@@ -55,11 +55,7 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
-- https://brett.trpstra.net/brettterpstra -> https://yinan-c.github.io/RSS-GPT/brett-terpstra.xml
-- https://meta.appinn.net/tag/chrome.rss, https://meta.appinn.net/tag/ios.rss, https://meta.appinn.net/tag/macos.rss -> https://yinan-c.github.io/RSS-GPT/appinn.xml
-- https://rknight.me/feed.xml -> https://yinan-c.github.io/RSS-GPT/robb-knight.xml
-- https://stephanango.com/feed.xml -> https://yinan-c.github.io/RSS-GPT/steph-ango.xml
-- https://lopespm.com/atom.xml -> https://yinan-c.github.io/RSS-GPT/byte-tank.xml
-- https://rsshub.app/paulgraham/articles -> https://yinan-c.github.io/RSS-GPT/paul-graham.xml
-- https://nesslabs.com/feed -> https://yinan-c.github.io/RSS-GPT/ness-labs.xml
-- https://manuelmoreale.com/feed/rss -> https://yinan-c.github.io/RSS-GPT/manuel-moreale.xml
+- https://www.quantconnect.com/research.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-intel.xml
+- http://export.arxiv.org/rss/q-fin.ST -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin.xml
+- https://github.com/wilsonfreitas/awesome-quant/releases.atom -> https://jacksonzhao-homelab.github.io/RSS-GPT/awesome-quant.xml
+- https://www.quantconnect.com/announcements.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-announcements.xml
