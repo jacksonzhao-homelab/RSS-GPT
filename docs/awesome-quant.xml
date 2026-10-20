@@ -1,9 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>Release notes from awesome-quant</title>
-<link>https://github.com/wilsonfreitas/awesome-quant/releases</link>
+<title>Recent Commits to awesome-quant:main</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commits/main</link>
 
+<item>
+<title>Add stochastly-calculators to Portfolio Optimization &amp; Risk Analysis …</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/b52a1a942eda36a6539b886f26a4a391883580d6</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/b52a1a942eda36a6539b886f26a4a391883580d6</guid>
+<content:encoded><![CDATA[
+<div> <pre style="white-space: pre-wrap; width: 81ex;">Add stochastly-calculators to Portfolio Optimization &amp; Risk Analysis (#835)
+
+Co-authored-by: Mahé Chadeffaud &lt;contact@stochastly.com&gt;
+Co-authored-by: Claude Opus 5.5 (1M context) &lt;noreply@anthropic.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre> <div>
+<pre style="white-space: pre-wrap; width: 81ex;">Add stochastly-calculators to Portfolio Optimization &amp; Risk Analysis (#835)
+
+Co-authored-by: Mahé Chadeffaud &lt;contact@stochastly.com&gt;
+Co-authored-by: Claude Opus 5.5 (1M context) &lt;noreply@anthropic.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:33Z</pubDate>
+</item>
+<item>
+<title>Add AlphaLattice to Quant Research Environments (#833)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/1bf8015a82dbe330a2ccf66b4c14b5b7a38d97a3</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/1bf8015a82dbe330a2ccf66b4c14b5b7a38d97a3</guid>
+<content:encoded><![CDATA[
+<div> <pre style="white-space: pre-wrap; width: 81ex;">Add AlphaLattice to Quant Research Environments (#833)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre> <div>
+<pre style="white-space: pre-wrap; width: 81ex;">Add AlphaLattice to Quant Research Environments (#833)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:30Z</pubDate>
+</item>
+<item>
+<title>Add Kandle to Visualization (#832)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/97a254a0dde6e5ede4d7eaf4924c279aec2bf394</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/97a254a0dde6e5ede4d7eaf4924c279aec2bf394</guid>
+<content:encoded><![CDATA[
+<div> <pre style="white-space: pre-wrap; width: 81ex;">Add Kandle to Visualization (#832)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre> <div>
+<pre style="white-space: pre-wrap; width: 81ex;">Add Kandle to Visualization (#832)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:26Z</pubDate>
+</item>
+<item>
+<title>Add perpbrain-sdk (Hyperliquid perps fill simulator, TypeScript) (#826)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/1d4a49744dd635926571eeabecafd38909061eeb</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/1d4a49744dd635926571eeabecafd38909061eeb</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add perpbrain-sdk (Hyperliquid perps fill simulator, TypeScript) (#826)
+
+Co-authored-by: TJGVNR &lt;175958291+TJGVNR@users.noreply.github.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:23Z</pubDate>
+</item>
+<item>
+<title>Add backtest-audit-kit to Trading &amp; Backtesting (#824)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/b5de255a94a224d32fe2f88b333c197ab8aba10d</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/b5de255a94a224d32fe2f88b333c197ab8aba10d</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add backtest-audit-kit to Trading &amp; Backtesting (#824)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:19Z</pubDate>
+</item>
+<item>
+<title>Add OpenThomas to Prediction Markets (#823)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/8103965e4af57ef52dfb3182c7baf985ff5b9c15</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/8103965e4af57ef52dfb3182c7baf985ff5b9c15</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add OpenThomas to Prediction Markets (#823)
+
+OpenThomas is an MIT-licensed autonomous weather-market trading agent for
+Kalshi and Polymarket with an MCP server, per-station bias learning, and
+fractional Kelly sizing under hard risk limits.
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:16Z</pubDate>
+</item>
+<item>
+<title>Add tradingview-mcp (#817)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/efc1cf4f9f97d93ad615b0dd610762483a2f9165</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/efc1cf4f9f97d93ad615b0dd610762483a2f9165</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add tradingview-mcp (#817)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:13Z</pubDate>
+</item>
+<item>
+<title>Add trading-research-agents to Trading &amp; Backtesting (#816)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/432b75da441475a82e600b7dfcff4284321c6845</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/432b75da441475a82e600b7dfcff4284321c6845</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add trading-research-agents to Trading &amp; Backtesting (#816)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:10Z</pubDate>
+</item>
+<item>
+<title>Add Lumina Capital to Trading &amp; Backtesting (#803)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/b69041ff4e4cdb5a5aec0f9c9a9118018c052297</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/b69041ff4e4cdb5a5aec0f9c9a9118018c052297</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Lumina Capital to Trading &amp; Backtesting (#803)
+
+Removed an empty line in the Trading &amp; Backtesting section.
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:07Z</pubDate>
+</item>
+<item>
+<title>Add OpenBacktesting to Trading &amp; Backtesting (#801)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/9b91971523a9908e82498c3bc840aa8dfe87db73</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/9b91971523a9908e82498c3bc840aa8dfe87db73</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add OpenBacktesting to Trading &amp; Backtesting (#801)
+
+Co-authored-by: lucidcog-dev &lt;lucidcog-dev@users.noreply.github.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:39:03Z</pubDate>
+</item>
+<item>
+<title>Add Fonrex to Market Data &amp; Data Sources (#800)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/c349ffb14873af6f9d7f0e940bb315753f402109</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/c349ffb14873af6f9d7f0e940bb315753f402109</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Fonrex to Market Data &amp; Data Sources (#800)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:59Z</pubDate>
+</item>
+<item>
+<title>Add Flowdepth to Visualization (#798)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/00bab7f8ba14a1c7a54312c9182d6c41b61380e9</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/00bab7f8ba14a1c7a54312c9182d6c41b61380e9</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Flowdepth to Visualization (#798)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:56Z</pubDate>
+</item>
+<item>
+<title>Add Optra to Trading &amp; Backtesting (#793)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/51c4e128140bf9ddf7e55633b0dc6ccb6c5fd8cb</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/51c4e128140bf9ddf7e55633b0dc6ccb6c5fd8cb</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Optra to Trading &amp; Backtesting (#793)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:53Z</pubDate>
+</item>
+<item>
+<title>Add alphai-tui stock dashboard (#788)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/aa6855379a64a5210439ff8f0e1fd9d7160c5533</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/aa6855379a64a5210439ff8f0e1fd9d7160c5533</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add alphai-tui stock dashboard (#788)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:48Z</pubDate>
+</item>
+<item>
+<title>Add dca-ladder-calculator (#784)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/47e50a54a6fc983e22f878b6d24c935d9a0668ba</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/47e50a54a6fc983e22f878b6d24c935d9a0668ba</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add dca-ladder-calculator (#784)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:45Z</pubDate>
+</item>
+<item>
+<title>Add IBKR-Telegram to Trading &amp; Backtesting (#779)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/9d2559523e48e7fc5d98641542123d6c25442732</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/9d2559523e48e7fc5d98641542123d6c25442732</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add IBKR-Telegram to Trading &amp; Backtesting (#779)
+
+* Add IBKR-Telegram to Trading &amp; Backtesting
+
+* Narrow IBKR-Telegram entry to option orders and webhook signal checks
+
+---------
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:41Z</pubDate>
+</item>
+<item>
+<title>Add Seiche and NoiseFloor research tools (#778)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/6af7eb5511d77cf27195cfea1597bb6a6991a372</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/6af7eb5511d77cf27195cfea1597bb6a6991a372</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Seiche and NoiseFloor research tools (#778)
+
+Co-authored-by: Mrinal &lt;mrinal091997@gmail.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:37Z</pubDate>
+</item>
+<item>
+<title>Add TokIO to Trading &amp; Backtesting (#763)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/03dd9ca14b96125dec45a738000cb2f48ab527f6</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/03dd9ca14b96125dec45a738000cb2f48ab527f6</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add TokIO to Trading &amp; Backtesting (#763)
+
+* Add TokIO to Trading &amp; Backtesting
+
+* Point TokIO entry at the renamed repository
+
+---------
+
+Co-authored-by: jordanahern2009-svg &lt;jordan.ahernforchess@gmail.com&gt;
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:33Z</pubDate>
+</item>
+<item>
+<title>Add Sharpen to Trading &amp; Backtesting (#759)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/024f7b2bba633853bd3bf8859f090424c65bd35c</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/024f7b2bba633853bd3bf8859f090424c65bd35c</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add Sharpen to Trading &amp; Backtesting (#759)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:29Z</pubDate>
+</item>
+<item>
+<title>Add TradeCanvas to Visualization (#755)</title>
+<link>https://github.com/wilsonfreitas/awesome-quant/commit/18ced2879d8db2bd3443eabb4d6da06aff7a49fd</link>
+<guid>https://github.com/wilsonfreitas/awesome-quant/commit/18ced2879d8db2bd3443eabb4d6da06aff7a49fd</guid>
+<content:encoded><![CDATA[
+
+<pre style="white-space: pre-wrap; width: 81ex;">Add TradeCanvas to Visualization (#755)
+
+Co-authored-by: Wilson Freitas &lt;wilson.freitas@gmail.com&gt;</pre>
+]]></content:encoded>
+
+<pubDate>2026-10-19T14:38:25Z</pubDate>
+</item>
 
 </channel>
 </rss>

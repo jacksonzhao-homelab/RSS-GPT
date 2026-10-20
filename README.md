@@ -55,7 +55,7 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
-- https://www.quantconnect.com/research.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-intel.xml
-- http://export.arxiv.org/rss/q-fin.ST -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin.xml
-- https://github.com/wilsonfreitas/awesome-quant/releases.atom -> https://jacksonzhao-homelab.github.io/RSS-GPT/awesome-quant.xml
-- https://www.quantconnect.com/announcements.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-announcements.xml
+- https://rss.arxiv.org/rss/q-fin.ST -> https://None.github.io/RSS-GPT/arxiv-qfin-st.xml
+- https://rss.arxiv.org/rss/q-fin.PM -> https://None.github.io/RSS-GPT/arxiv-qfin-pm.xml
+- https://github.com/wilsonfreitas/awesome-quant/commits/main.atom -> https://None.github.io/RSS-GPT/awesome-quant.xml
+- https://www.quantconnect.com/research.posts.sitemap.xml -> https://None.github.io/RSS-GPT/qc-intel.xml

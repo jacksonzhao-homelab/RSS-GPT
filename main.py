@@ -43,6 +43,34 @@ def fetch_feed(url, log_file):
         response = requests.get(url, headers=headers, timeout=30)
         if response.status_code == 200:
             feed = feedparser.parse(response.text)
+            if not feed.entries and "<urlset" in response.text:
+                # sitemap (urlset) 兜底：feedparser 不解析 sitemap 协议，这里转成伪 entries
+                import html as _html
+                from types import SimpleNamespace
+                entries = []
+                for m in re.finditer(r"<url>(.*?)</url>", response.text, re.S):
+                    block = m.group(1)
+                    loc = re.search(r"<loc>\s*(.*?)\s*</loc>", block)
+                    lastmod = re.search(r"<lastmod>\s*(.*?)\s*</lastmod>", block)
+                    if not loc:
+                        continue
+                    url_ = _html.unescape(loc.group(1))
+                    if not re.search(r"quantconnect\.com/(research|announcements|lean|forum/discussion)/", url_):
+                        continue
+                    slug = url_.rstrip("/").split("/")[-1].replace("-", " ").strip()[:80]
+                    dt = ""
+                    if lastmod:
+                        try:
+                            dt = datetime.datetime.fromisoformat(lastmod.group(1).replace("Z", "+00:00")).strftime("%a, %d %b %Y %H:%M:%S %z")
+                        except ValueError:
+                            dt = ""
+                    entries.append(SimpleNamespace(
+                        title=slug or url_, link=url_, id=url_, guidislink=True,
+                        published=dt, updated=dt,
+                        summary=slug or url_, article=slug or url_))
+                qc_link = entries[0].link if entries else "https://www.quantconnect.com"
+                feed = SimpleNamespace(entries=entries, bozo=False, version="sitemap",
+                                       feed={"title": "QC sitemap", "link": qc_link})
             return {'feed': feed, 'status': 'success'}
         else:
             with open(log_file, 'a') as f:

@@ -52,7 +52,7 @@
 
 <a href="https://www.buymeacoffee.com/yinan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-- https://www.quantconnect.com/research.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-intel.xml
-- http://export.arxiv.org/rss/q-fin.ST -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin.xml
-- https://github.com/wilsonfreitas/awesome-quant/releases.atom -> https://jacksonzhao-homelab.github.io/RSS-GPT/awesome-quant.xml
-- https://www.quantconnect.com/announcements.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-announcements.xml
+- https://rss.arxiv.org/rss/q-fin.ST -> https://None.github.io/RSS-GPT/arxiv-qfin-st.xml
+- https://rss.arxiv.org/rss/q-fin.PM -> https://None.github.io/RSS-GPT/arxiv-qfin-pm.xml
+- https://github.com/wilsonfreitas/awesome-quant/commits/main.atom -> https://None.github.io/RSS-GPT/awesome-quant.xml
+- https://www.quantconnect.com/research.posts.sitemap.xml -> https://None.github.io/RSS-GPT/qc-intel.xml

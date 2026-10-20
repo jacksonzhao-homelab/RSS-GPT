@@ -1,6 +1,26 @@
 ------------------------------------------------------
-Started: 2026-10-20 14:10:04.419572
+Started: 2026-10-20 22:20:12.415078
 Existing_entries: 0
-Fetching from https://github.com/wilsonfreitas/awesome-quant/releases.atom
-append_entries: 0
-Finish: 2026-10-20 14:10:04.542222
+Fetching from https://github.com/wilsonfreitas/awesome-quant/commits/main.atom
+Append: [Add stochastly-calculators to Portfolio Optimization & Risk Analysis …](https://github.com/wilsonfreitas/awesome-quant/commit/b52a1a942eda36a6539b886f26a4a391883580d6)
+Append: [Add AlphaLattice to Quant Research Environments (#833)](https://github.com/wilsonfreitas/awesome-quant/commit/1bf8015a82dbe330a2ccf66b4c14b5b7a38d97a3)
+Append: [Add Kandle to Visualization (#832)](https://github.com/wilsonfreitas/awesome-quant/commit/97a254a0dde6e5ede4d7eaf4924c279aec2bf394)
+Append: [Add perpbrain-sdk (Hyperliquid perps fill simulator, TypeScript) (#826)](https://github.com/wilsonfreitas/awesome-quant/commit/1d4a49744dd635926571eeabecafd38909061eeb)
+Append: [Add backtest-audit-kit to Trading & Backtesting (#824)](https://github.com/wilsonfreitas/awesome-quant/commit/b5de255a94a224d32fe2f88b333c197ab8aba10d)
+Append: [Add OpenThomas to Prediction Markets (#823)](https://github.com/wilsonfreitas/awesome-quant/commit/8103965e4af57ef52dfb3182c7baf985ff5b9c15)
+Append: [Add tradingview-mcp (#817)](https://github.com/wilsonfreitas/awesome-quant/commit/efc1cf4f9f97d93ad615b0dd610762483a2f9165)
+Append: [Add trading-research-agents to Trading & Backtesting (#816)](https://github.com/wilsonfreitas/awesome-quant/commit/432b75da441475a82e600b7dfcff4284321c6845)
+Append: [Add Lumina Capital to Trading & Backtesting (#803)](https://github.com/wilsonfreitas/awesome-quant/commit/b69041ff4e4cdb5a5aec0f9c9a9118018c052297)
+Append: [Add OpenBacktesting to Trading & Backtesting (#801)](https://github.com/wilsonfreitas/awesome-quant/commit/9b91971523a9908e82498c3bc840aa8dfe87db73)
+Append: [Add Fonrex to Market Data & Data Sources (#800)](https://github.com/wilsonfreitas/awesome-quant/commit/c349ffb14873af6f9d7f0e940bb315753f402109)
+Append: [Add Flowdepth to Visualization (#798)](https://github.com/wilsonfreitas/awesome-quant/commit/00bab7f8ba14a1c7a54312c9182d6c41b61380e9)
+Append: [Add Optra to Trading & Backtesting (#793)](https://github.com/wilsonfreitas/awesome-quant/commit/51c4e128140bf9ddf7e55633b0dc6ccb6c5fd8cb)
+Append: [Add alphai-tui stock dashboard (#788)](https://github.com/wilsonfreitas/awesome-quant/commit/aa6855379a64a5210439ff8f0e1fd9d7160c5533)
+Append: [Add dca-ladder-calculator (#784)](https://github.com/wilsonfreitas/awesome-quant/commit/47e50a54a6fc983e22f878b6d24c935d9a0668ba)
+Append: [Add IBKR-Telegram to Trading & Backtesting (#779)](https://github.com/wilsonfreitas/awesome-quant/commit/9d2559523e48e7fc5d98641542123d6c25442732)
+Append: [Add Seiche and NoiseFloor research tools (#778)](https://github.com/wilsonfreitas/awesome-quant/commit/6af7eb5511d77cf27195cfea1597bb6a6991a372)
+Append: [Add TokIO to Trading & Backtesting (#763)](https://github.com/wilsonfreitas/awesome-quant/commit/03dd9ca14b96125dec45a738000cb2f48ab527f6)
+Append: [Add Sharpen to Trading & Backtesting (#759)](https://github.com/wilsonfreitas/awesome-quant/commit/024f7b2bba633853bd3bf8859f090424c65bd35c)
+Append: [Add TradeCanvas to Visualization (#755)](https://github.com/wilsonfreitas/awesome-quant/commit/18ced2879d8db2bd3443eabb4d6da06aff7a49fd)
+append_entries: 20
+Finish: 2026-10-20 22:20:16.270317
