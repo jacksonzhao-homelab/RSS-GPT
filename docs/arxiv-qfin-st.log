@@ -11,3 +11,9 @@ Append: [Conditionally Identifiable Latent Representation for Multivariate Time 
 Append: [Buy the Rumor, Sell the News: When Is News Priced In?](https://arxiv.org/abs/2608.14014)
 append_entries: 7
 Finish: 2026-10-20 22:20:10.957324
+------------------------------------------------------
+Started: 2026-10-20 14:22:45.134819
+Existing_entries: 7
+Fetching from https://rss.arxiv.org/rss/q-fin.ST
+append_entries: 0
+Finish: 2026-10-20 14:22:45.262071
