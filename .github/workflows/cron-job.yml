@@ -5,6 +5,9 @@ on:
   # cron job every 2 hours
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  schedule:
+    # 每周六 UTC 22:00 = 北京时间周六上午 6:00（UTC+8）
+    - cron: '0 22 * * 5'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
