@@ -4,6 +4,32 @@
 <title>q-fin.ST updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/q-fin.ST</link>
 
+<item>
+<title>What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk</title>
+<link>https://arxiv.org/abs/2610.29578</link>
+<guid>https://arxiv.org/abs/2610.29578</guid>
+<content:encoded><![CDATA[
+<div> Polymarket, 交易量预测, 争议预测, 平台变更, 特征解释
+<br><br>总结: 基于Polymarket近80万市场数据，利用合约元数据预测交易量与争议。交易量预测表现优异，市场话题贡献最大，神经网络提升有限。然而，平台变更导致模型失效，主要因新问题形式未在训练集中，且供需关系发生转变。争议预测较稳定但精准度低，适合市场排序，不适合个别预测。 <div>
+arXiv:2610.29578v1 Announce Type: new 
+Abstract: Using a near-census of 802,863 resolved markets listed on Polymarket between January 2023 and May 2026, and only information available at listing (the market's title and description, named resolution source, and contract metadata), we predict lifetime trading volume and whether settlement is later disputed. Contract information predicts trading volume well (out-of-sample $R^2 = 0.747$ for log volume), and most of the signal is interpretable: market topic provides the largest gain ($+0.289$ $R^2$ over a $0.220$ contract-feature baseline), wording and resolution-rule design add smaller but measurable improvements ($+0.027$ combined), and neural text models add little beyond the interpretable features. This performance does not survive a period of platform change coinciding with a shift in listing formats: accuracy in predicting whether a market reaches \$1,000 falls from AUC $0.940$ under same-period evaluation to $0.577$ when training on past quarters and testing on later ones. The loss concentrates in markets whose question forms were absent from training (76.9% of test markets; on familiar forms the model still reaches $0.778$), and a decomposition attributes more of it to a changed relationship between contract characteristics and demand than to an outdated mapping from text to features. Dispute predictors are more stable but less precise: launch-time features rank dispute risk far better than chance (AUC $0.78$), yet at a 0.31% base rate precision is too low for case-by-case prediction (average precision $0.012$), so the scores suit ranking groups of markets rather than forecasting individual disputes.
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>GROMM: Generative Risk-neutral Option Market Models</title>
+<link>https://arxiv.org/abs/2610.16732</link>
+<guid>https://arxiv.org/abs/2610.16732</guid>
+<content:encoded><![CDATA[
+<div> 无套利，欧洲期权，局部波动率，SANOS 框架，平滑插值
+<br><br>总结: 本文提出基于SANOS框架的静态和动态无套利欧洲期权市场模型，具备平滑插值功能，并证明其动态过程存在唯一强解。该模型将局部波动率视为价格曲面表示而非定价模型。研究利用S&P指数期权数据，显示模型初始状态拟合买卖价差超95%。在$\mathbb{P}$和$\mathbb{Q}$下训练后，验证了模型的无套利特性及对市场动态的良好拟合，并提出BHW测试以检验无套利。 <div>
+arXiv:2610.16732v2 Announce Type: replace-cross 
+Abstract: We present a statically and dynamically arbitrage-free European option market model with smooth interpolation between option prices, based on the SANOS framework, and prove that its dynamics admit a unique strong solution. In spirit, it is a stochastic model for local volatility when the latter is used as a representation of a European option price surface, not as a pricing model. We illustrate the strength of our approach on S&amp;P Index Option data from January 2022 to August 2025. We show that the model's initial state fits within bid/ask for more than 95% of relevant market option prices. We then train the model dynamics under $\mathbb{P}$ and $\mathbb{Q}$ and show that the model is indeed free of arbitrage while fitting the dynamics of the market well. We also propose a range of BHW-tests to test for absence of arbitrage.
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>More Mentions, Less Information? Diagnosing Identity and Alignment in Reddit Embeddings for Volatility Forecasting</title>

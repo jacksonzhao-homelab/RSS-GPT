@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>q-fin.TR updates on arXiv.org</title>
+<link>http://rss.arxiv.org/rss/q-fin.TR</link>
+
+<item>
+<title>Understanding the Inner Workings of a State-Space Foundation Model for Limit Order Books</title>
+<link>https://arxiv.org/abs/2610.28753</link>
+<guid>https://arxiv.org/abs/2610.28753</guid>
+<content:encoded><![CDATA[
+<div> Mamba-3, 限价订单簿, 订单流不平衡, 市场微观结构, 内部表示
+<br><br>总结:
+1. 研究利用8.2M参数的Mamba-3状态空间模型，在8只美股的限价订单簿消息流上训练。
+2. 模型学到了市场动态，能高精度解码订单流不平衡（$R^2 \approx 0.59$）。
+3. 表示适用于未见过的股票，证明是通用特征而非特定代码。
+4. 模型表示具有因果可解释性，改变状态会按预期影响预测。 <div>
+arXiv:2610.28753v1 Announce Type: new 
+Abstract: Autoregressive foundation models offer state-of-the-art capabilities to simulate the market by generating the message flow of limit order books (LOBs). Yet, without understanding their inner workings, research directions are hard to narrow and practical use in real-world trading environments remains uncertain. This study therefore asks what these models actually learn about market microstructure. We find that, similarly to games where sequence models build an internal representation of the board, an 8.2M-parameter Mamba-3 state-space model trained autoregressively on the tokenized message stream of eight large-cap US equities learns an internal representation of the market and its dynamics. In particular, order-flow imbalance, a central driver of short-horizon price moves, is decodable at $R^2 \approx 0.59$, far above controls and baselines. This representation extends to unseen stocks, suggesting that these models learn general representations rather than ticker-specific patterns. The model also generalizes across metrics beyond order-flow imbalance: results hold across traded volume and volatility. Additionally, the representation is causally steerable: pushing the state along a feature's axis shifts the model's next-message beliefs as that feature implies, monotonically in dose, consistent with the emergence of a world model.
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Combinatorial Arbitrage in Prediction Markets</title>
+<link>https://arxiv.org/abs/2610.23517</link>
+<guid>https://arxiv.org/abs/2610.23517</guid>
+<content:encoded><![CDATA[
+<div> 预测市场 套利 逻辑关系 整数规划 无风险收益
+<br><br>总结:
+*   提出识别逻辑相关合约套利的框架，证明价格在允许的支付向量凸包之外存在套利。
+*   利用元数据和语义分析恢复190万个逻辑关系，构建覆盖25万个合约的约束系统。
+*   通过整数编程寻找最优套利组合，并模拟在Polymarket上的执行。
+*   研究发现理想套利者每周可赚取3.5%的无风险收益，且套利机会持续更久。 <div>
+arXiv:2610.23517v3 Announce Type: replace 
+Abstract: We develop a framework to identify and quantify arbitrage across logically related prediction-market contracts. We prove that prices outside the convex hull of admissible payoff vectors admit arbitrage and identify optimal arbitrage portfolios through integer programming. Using venue metadata and semantic analysis of resolution criteria, we recover 1.9 million logical relations and compile them into constraint systems covering more than 255,000 contracts. We replay full-depth Polymarket order books to simulate an arbitrageur executing these portfolios against resting orders. Among settled portfolios, an ideal arbitrageur that takes the full displayed depth of every opportunity and reuses its capital at resolution earns a risk-free return of 3.5% a week after spreads and fees. We find that arbitrage opportunities persist longer and attract less observed participation where relation discovery and execution are more costly.
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Strategic Index Reconstitution: Differential Games, Closed-Loop Equilibria and Mean-Field Dynamics</title>
+<link>https://arxiv.org/abs/2609.15901</link>
+<guid>https://arxiv.org/abs/2609.15901</guid>
+<content:encoded><![CDATA[
+<div> 多资产交易博弈, 指数重构, 机会主义交易, 纳什均衡, 均值场极限
+
+<br><br>总结: 本文研究指数重构期间的多资产交易博弈。机会主义交易者基于异质信念建立库存，在公告后调整并在实施日与指数基金对冲。在无价格操纵条件下，构建了子博弈完美纳什均衡，通过非标准矩阵 Riccati 方程计算仿射反馈策略。均值场极限下构建均衡并证明定量收敛。数值表明：竞争加剧减少实施日波动，机会主义降低实施不足（除非价格弹性低），信念分散度增加总交易量。 <div>
+arXiv:2609.15901v2 Announce Type: replace-cross 
+Abstract: We study a continuous-time, multiasset trading game around index reconstitution, in which opportunistic traders have heterogeneous beliefs about the future index constitution and interact through transient cross-asset price impact and instantaneous execution costs. Opportunistic traders build inventory based on their individual beliefs about the future index constitution before a public announcement, adjust their positions to the revealed composition, and unwind them against the indexer's prescribed rebalancing trades at the implementation date when the new index composition takes effect. Under a no-price-manipulation condition, we construct a subgame-perfect Nash equilibrium. Its affine feedback policies are computed from a non-standard matrix Riccati equation and linear ODEs whose number and dimensions are independent of population size. Under mean-field scaling, we construct a mean-field equilibrium and obtain quantitative convergence and approximate-Nash bounds. Numerical illustrations show that greater competition among opportunists dampens price swings around implementation and that opportunistic trading lowers the indexer's implementation shortfall unless price resilience is very low. Holding the average belief fixed, greater belief dispersion can increase gross trading volume without changing net aggregate opportunist holdings or price impact.
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+<pubDate>Thu, 22 Oct 2026 00:00:00 -0400</pubDate>
+</item>
+
+</channel>
+</rss>

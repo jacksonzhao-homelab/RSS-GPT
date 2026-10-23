@@ -57,3 +57,4 @@
 - https://github.com/wilsonfreitas/awesome-quant/commits/main.atom -> https://jacksonzhao-homelab.github.io/RSS-GPT/awesome-quant.xml
 - https://www.quantconnect.com/research.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-intel.xml
 - file://docs/yanbao.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/yanbao.xml
+- https://rss.arxiv.org/rss/q-fin.TR -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-tr.xml

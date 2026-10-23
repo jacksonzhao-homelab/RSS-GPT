@@ -1,0 +1,15 @@
+------------------------------------------------------
+Started: 2026-10-23 01:20:50.410408
+Existing_entries: 0
+Fetching from https://rss.arxiv.org/rss/q-fin.TR
+Token length: 1399
+Summarized using glm-4.7-flash
+Append: [Understanding the Inner Workings of a State-Space Foundation Model for Limit Order Books](https://arxiv.org/abs/2610.28753)
+Token length: 987
+Summarized using glm-4.7-flash
+Append: [Combinatorial Arbitrage in Prediction Markets](https://arxiv.org/abs/2610.23517)
+Token length: 1432
+Summarized using glm-4.7-flash
+Append: [Strategic Index Reconstitution: Differential Games, Closed-Loop Equilibria and Mean-Field Dynamics](https://arxiv.org/abs/2609.15901)
+append_entries: 3
+Finish: 2026-10-23 01:22:26.042297

@@ -35,3 +35,15 @@ Existing_entries: 7
 Fetching from https://rss.arxiv.org/rss/q-fin.ST
 append_entries: 0
 Finish: 2026-10-20 14:53:21.418491
+------------------------------------------------------
+Started: 2026-10-23 01:19:45.153318
+Existing_entries: 7
+Fetching from https://rss.arxiv.org/rss/q-fin.ST
+Token length: 1681
+Summarized using glm-4.7-flash
+Append: [What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk](https://arxiv.org/abs/2610.29578)
+Token length: 894
+Summarized using glm-4.7-flash
+Append: [GROMM: Generative Risk-neutral Option Market Models](https://arxiv.org/abs/2610.16732)
+append_entries: 2
+Finish: 2026-10-23 01:20:49.438072
