@@ -11,6 +11,7 @@
 import html
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -41,6 +42,35 @@ def fetch_json(url, timeout=20):
     if r.returncode != 0:
         raise RuntimeError(f"curl {r.returncode}: {r.stderr[:120]}")
     return json.loads(r.stdout)
+
+
+REPORT_PAGE = "https://data.eastmoney.com/report/info/{code}.html"
+_TAG = re.compile(r"<[^>]+>")
+
+
+def fetch_abstract(code, timeout=20, limit=1500):
+    """研报正文页的「摘要」块（div.ctx-content）→ 纯文本。
+
+    reportapi 的列表接口没有摘要字段，只给标题；不补摘要的话 GLM 只能靠标题
+    猜内容。这里抓正文页把摘要塞进 description，喂给 main.py 的 clean_html。
+    """
+    env = {k: v for k, v in os.environ.items()
+           if k.lower() not in ("http_proxy", "https_proxy", "all_proxy")}
+    r = subprocess.run(["curl", "-sSL", "-m", str(timeout), "-A", "Mozilla/5.0",
+                        REPORT_PAGE.format(code=code)],
+                       capture_output=True, text=True, errors="replace", env=env)
+    if r.returncode != 0 or not r.stdout:
+        return ""
+    body = r.stdout
+    i = body.find('class="ctx-content"')
+    if i < 0:
+        return ""
+    seg = body[i:i + 20000]
+    j = seg.find("</div>")
+    text = _TAG.sub(" ", seg[:j] if j > 0 else seg)
+    text = html.unescape(re.sub(r"\s+", " ", text)).strip()
+    return text[:limit]
+
 
 
 def collect(days=DAYS):
@@ -74,11 +104,13 @@ def filter_hits(rows):
     return out
 
 
-def build_rss(hits):
+def build_rss(hits, abstracts=None):
+    abstracts = abstracts or {}
     items = sorted(hits, key=lambda x: x.get("publishDate") or "", reverse=True)
     now = format_datetime(datetime.now(timezone.utc))
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
-           '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+           '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" '
+           'xmlns:content="http://purl.org/rss/1.0/modules/content/">',
            "  <channel>",
            "    <title>券商金工研报线索（东方财富）</title>",
            "    <link>https://data.eastmoney.com/report/strategyreport.jshtml</link>",
@@ -97,7 +129,9 @@ def build_rss(hits):
         except ValueError:
             pub = now
         org = html.escape(x.get("orgSName") or "")
+        body = abstracts.get(code) or ""
         desc = f"[{org}] {html.escape(t)}"
+        content = f"[{org}] {t}" + (f"\n\n摘要：{body}" if body else "")
         out += ["    <item>",
                 f"      <title>{html.escape(t)}</title>",
                 f"      <link>{link}</link>",
@@ -105,7 +139,7 @@ def build_rss(hits):
                 f"      <author>{org}</author>",
                 f"      <pubDate>{pub}</pubDate>",
                 f"      <description>{desc}</description>",
-                f"      <content:encoded><![CDATA[{desc}]]></content:encoded>",
+                f"      <content:encoded><![CDATA[{content}]]></content:encoded>",
                 "    </item>"]
     out += ["  </channel>", "</rss>", ""]
     return "\n".join(out)
@@ -119,8 +153,21 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"[yanbao] fetch failed: {e}", file=sys.stderr)
         hits = []
-    rss = build_rss(hits)
+    # 只给最近会被摘要的那几条抓正文（main.py max_items=8），控制请求数
+    abstracts = {}
+    for x in sorted(hits, key=lambda x: x.get("publishDate") or "", reverse=True)[:12]:
+        code = x["infoCode"]
+        try:
+            abstracts[code] = fetch_abstract(code)
+        except Exception as e:            # noqa: BLE001
+            print(f"[yanbao] abstract failed {code}: {e}", file=sys.stderr)
+        time.sleep(0.5)
+    print(f"[yanbao] abstracts={sum(1 for v in abstracts.values() if v)}/{len(abstracts)}",
+          file=sys.stderr)
+    rss = build_rss(hits, abstracts)
     out_dir = Path("docs")
     out_dir.mkdir(exist_ok=True)
-    (out_dir / "yanbao.xml").write_text(rss, encoding="utf-8")
-    print(f"[yanbao] wrote docs/yanbao.xml ({len(rss)} bytes)", file=sys.stderr)
+    # 注意：必须和 main.py 的输出 docs/yanbao.xml 分开写。同名会让 main.py 把
+    # 刚生成的原始条目当成 existing_entries 直接跳过，因此永远不会调 LLM。
+    (out_dir / "yanbao_raw.xml").write_text(rss, encoding="utf-8")
+    print(f"[yanbao] wrote docs/yanbao_raw.xml ({len(rss)} bytes)", file=sys.stderr)
