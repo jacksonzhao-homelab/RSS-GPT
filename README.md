@@ -55,9 +55,9 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
-- https://rss.arxiv.org/rss/q-fin.ST -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-st.xml
-- https://rss.arxiv.org/rss/q-fin.PM -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-pm.xml
+- file://docs/arxiv-qfin-st-raw.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-st.xml
+- file://docs/arxiv-qfin-pm-raw.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-pm.xml
 - https://github.com/wilsonfreitas/awesome-quant/commits/main.atom -> https://jacksonzhao-homelab.github.io/RSS-GPT/awesome-quant.xml
 - https://www.quantconnect.com/research.posts.sitemap.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/qc-intel.xml
-- file://docs/yanbao.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/yanbao.xml
-- https://rss.arxiv.org/rss/q-fin.TR -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-tr.xml
+- file://docs/yanbao_raw.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/yanbao.xml
+- file://docs/arxiv-qfin-tr-raw.xml -> https://jacksonzhao-homelab.github.io/RSS-GPT/arxiv-qfin-tr.xml

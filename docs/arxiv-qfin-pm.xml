@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>q-fin.PM updates on arXiv.org</title>
-<link>http://rss.arxiv.org/rss/q-fin.PM</link>
+<title>arXiv q-fin.PM（近 10 天提交）</title>
+<link>https://arxiv.org/list/q-fin.PM/recent</link>
 
+<item>
+<title>The Generalised Kessler Syndrome and the Persian Gulf</title>
+<link>https://arxiv.org/abs/2610.40129</link>
+<guid>https://arxiv.org/abs/2610.40129</guid>
+<content:encoded><![CDATA[
+<div> Kessler syndrome, 供应链级联, 库存缓冲, 波斯 Gulf, Kelly组合分配
+总结:
+<br><br>
+1. 本文将太空垃圾碰撞的Kessler syndrome泛化至供应链，描述了加性通道加速故障与减性通道削弱修复，导致系统不可逆转变。
+2. 库存作为缓冲隔离子系统，耗尽后暴露依赖性。
+3. 波斯 Gulf 因海运受限导致库存非均衡耗尽并损害物流系统，揭示了过度优化带来的脆弱性。
+4. 针对霍尔木兹海峡限制，基于最弱链收益的Kelly组合分配策略应集中在滞后输入。 <div>
+The term Kessler syndrome was coined for a runaway orbital cascade creating a high-density debris field. The idea is generalised and applied to supply chains. An additive channel enables failures to generate further failures; a subtractive channel erodes the capacity to contain and restore. When damage outpaces repair, failure becomes irreversible and the system settles into a new state. Supplies connect the theory to its application. Stocks insulate subsystems from one another, and their exhaustion exposes dependencies. For the Persian Gulf states, restrictions on maritime supplies from spring 2026 are inadequately compensated by air and road transport alternatives. This depletes inventories unevenly across products and impairs the functioning of the logistics system itself. Throughput optimisation builds fragility everywhere; the Gulf is where it is becoming visible, with the Strait of Hormuz restriction as the trigger. Formulated as a Kelly portfolio allocation under a weakest-link payoff, the optimal strategy concentrates resources on the lagging rather than the leading inputs.
+
+arXiv categories: q-fin.PM
+]]></content:encoded>
+<pubDate>Thu, 29 Oct 2026 14:21:42 +0000</pubDate>
+<pubDate>Thu, 29 Oct 2026 14:21:42 +0000</pubDate>
+</item>
+<item>
+<title>Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns</title>
+<link>https://arxiv.org/abs/2610.39205</link>
+<guid>https://arxiv.org/abs/2610.39205</guid>
+<content:encoded><![CDATA[
+<div> 稀疏自编码器 投资组合构建 风险分散 加密货币 因子模型<br><br>总结: 本文提出利用稀疏自编码器（SAE）将资产收益描述为少量特征，以解决神经因子难以解释的问题。通过在加密货币及股票上的时间序列评估发现，SAE因子身份不稳定且未超越简单反向策略，但其投资组合具有较低波动性，归因于资产间较低的相关性。本文的贡献在于证明了稀疏编码能支持风险分散，但需将其与阿尔法或因子稳定性区分开来。 <div>
+Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SAE with common benchmarks in a time-ordered evaluation. We find consistently lower volatility in SAE portfolios and link this result to lower correlations among the selected assets. However, the SAE does not outperform a simple contrarian strategy on risk-adjusted return, and its factor identities are not stable across training runs. Our contribution is to show that sparse coding can support portfolio diversification, while clearly separating this risk effect from claims about alpha or stable factor identities.
+
+arXiv categories: cs.LG, q-fin.PM, q-fin.ST
+]]></content:encoded>
+<pubDate>Thu, 29 Oct 2026 02:28:10 +0000</pubDate>
+<pubDate>Thu, 29 Oct 2026 02:28:10 +0000</pubDate>
+</item>
+<item>
+<title>Simple Portfolios that Deliver Consistent Decent Returns</title>
+<link>https://arxiv.org/abs/2610.36491</link>
+<guid>https://arxiv.org/abs/2610.36491</guid>
+<content:encoded><![CDATA[
+<div> 投资组合构建, 私人投资者, 简单投资组合, 凸优化, 美国ETF
+<br><br>总结: 本文针对私人投资者使用小规模流动性的美国ETF，在无杠杆、无做空及月度交易的约束下，将投资组合构建视为可解释参数的凸优化问题。研究显示，仅用3只ETF即可在无需针对回测期调优的情况下获得稳定收益。作者开发了一个可在笔记本电脑上回测数百个投资组合的框架。在无收益预测时采用基于因子模型的风险平价和最小波动率策略；有预测时结合马克维茨、动量信号和岭回归。与标准60/40配置相比，提议的投资组合表现更优。 <div>
+Portfolio construction has been studied extensively in both academia and industry. Its applications range from pension funds and hedge funds to private savings. The academic literature centers on methodology, commonly evaluated in settings that allow short selling, leverage, and frequent trading. Industry, on the other hand, operates under real constraints, but its data and methods are proprietary and largely unpublished. Neither is directly available to the private investor. This paper is an empirical study of established portfolio construction methods in the setting of the private investor. We consider a small investable universe of liquid US ETFs, where trading is monthly and carries a cost, and neither shorting nor leverage is permitted. Portfolio construction is posed as a convex optimization problem, its inputs are estimated from public data, and every parameter is interpretable. We denote such portfolios simple. We show that simple portfolios of as few as three ETFs deliver consistent and decent returns, without tuning to the backtest period. To find them, we have developed a framework, which we share publicly, able to backtest hundreds of portfolios on a standard laptop over a twenty year period or longer. When no return forecast is made, portfolios are constructed from risk alone, using methods such as risk parity and minimum volatility, built on a statistical factor model fitted with expectation maximization. When a forecast is made, we combine the Markowitz formulation with momentum signals and ridge regression. We report what works and what each component adds, weighing its gain against its complexity and the effort it demands of the investor. The findings are supported by numerical experiments over the past two decades, and the proposed portfolios outperform the standard 60/40 allocation.
+
+arXiv categories: q-fin.PM
+]]></content:encoded>
+<pubDate>Tue, 27 Oct 2026 01:45:09 +0000</pubDate>
+<pubDate>Tue, 27 Oct 2026 01:45:09 +0000</pubDate>
+</item>
+<item>
+<title>Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management</title>
+<link>https://arxiv.org/abs/2610.37705</link>
+<guid>https://arxiv.org/abs/2610.37705</guid>
+<content:encoded><![CDATA[
+<div> AI代理, 财富管理, 尾部风险, 决策集中度, 缓解策略
+
+<br><br>总结:
+1. 基于真实数据构建AI代理模型，发现有效决策者仅约2.0，形成"单一种群"。
+2. 代理层放大指数尾部损失（与采用率平方根相关），同步自动化是主因。
+3. 提出的脆弱性指数能准确预测尾部清算。
+4. 分散自动化（如分阶段执行）比分散模型提供商更能降低63%风险。
+5. 历史回测显示，10%市值的代理层会加深2020年崩盘约858个基点。 <div>
+Conversational AI agents are turning wealth management into a continuous loop of market analysis, allocation, risk checks and execution, run for millions of clients on a handful of foundation models. We build a multi-asset agent-based model of this layer, calibrated to measured model concentration, cross-model correlation, retail turnover and 33 years of real equity returns, and ask when the layer amplifies market declines and what prevents it. The effective number of independent decision-makers is bounded however many clients the layer serves: about 2.0 at today's consumer concentration. This monoculture of views drives crowding in individual securities and sets the blast radius of a compromised model provider, but it does not drive market-wide liquidation. Index tail losses rise with the square root of agentic adoption, are 1.47-1.90 times larger under an agentic than under a periodic robo-advice architecture, and do not rise with model concentration; synchronized automation (risk overlays, drawdown cuts and attention-driven execution) drives them. A fragility index computed from aggregate flow, public returns and an impact estimate forecasts tail liquidation out of sample (hold-out R^2 of 0.56) far better than concentration or correlation measures. Decorrelating the automation, not the models, works: dispersing overlay parameters, staging execution and a participation breaker together cut tail liquidation by 63% at no measurable cost to client welfare, whereas provider diversification has no effect. Because the statistics required are sums, they can be computed across platforms under secure aggregation with differential privacy at negligible cost for realistic client populations. In historical replays, an agentic layer holding 10% of the market would have deepened the 2020 crash by about 858 basis points.
+
+arXiv categories: q-fin.RM, q-fin.PM, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 18:30:56 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 18:30:56 +0000</pubDate>
+</item>
+<item>
+<title>Certifying Reward Alignment in Portfolio Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2610.34153</link>
+<guid>https://arxiv.org/abs/2610.34153</guid>
+<content:encoded><![CDATA[
+<div> 金融强化学习 决策审计 均值-方差均衡 前瞻性Actor-Critic 奖励与偏好分离
+<br><br>总结:
+本文针对金融强化学习优化奖励与偏好实现不一致的问题，提出一种决策审计框架。该方法通过残差分析分离奖励误设与学习误差，并利用前瞻性Actor-Critic模型估计未来政策修正，显著降低了策略偏差。尽管联合奖励校准保留了均值-方差目标，但在历史回测中未改善实际投资绩效，从而量化了决策是否实现既定目标。 <div>
+Financial reinforcement learning often translates an investment objective into an additive risk-adjusted reward. An agent can optimise that reward accurately yet implement a different financial preference. We develop a decision audit for terminal mean-variance equilibrium that separates reward misspecification from learning error. In a finite exogenous-state market, we bound the gain from changing one action using actor, reward and continuation-critic residuals. The certificate ignores state-constant critic offsets, accommodates convex action constraints, and has an independent-sample extension that does not require the equilibrium policy. A continuation-aware actor-critic method estimates the future-policy correction from samples. Across nine controlled markets and twenty seeds, it reduces policy distance by and one-step deviation gain by relative to a matched myopic-reward network. A separate PPO comparison tests the same reward intervention within a standard optimiser. Historical tests cross seven covariance estimators and 10, 30 and 49 US industry portfolios over 432 months: joint reward calibration preserves each fitted mean-variance target, but does not improve realised investment performance. Together, these results provide a way to quantify whether a learned decision implements its stated financial objective, separately from how well that objective performs in a backtest.
+
+arXiv categories: q-fin.PM
+]]></content:encoded>
+<pubDate>Sun, 25 Oct 2026 08:38:59 +0000</pubDate>
+<pubDate>Sun, 25 Oct 2026 08:38:59 +0000</pubDate>
+</item>
+<item>
+<title>Optimal portfolio choice under green transition timing risk</title>
+<link>https://arxiv.org/abs/2610.33597</link>
+<guid>https://arxiv.org/abs/2610.33597</guid>
+<content:encoded><![CDATA[
+<div> 绿色转型, 投资组合选择, 模糊厌恶, 跳跃过程, 鲁棒控制
+
+<br><br>总结:
+本文研究投资者在不确定绿色转型时刻下的最优投资组合选择。模型将转型建模为具有恒定强度的跳跃过程，导致绿色股上涨、棕色股下跌。投资者具有CRRA偏好及模型模糊厌恶（幂效用为乘性惩罚，对数效用为加性惩罚）。通过分离转型前后的情况求解，并给出验证定理。案例研究表明，在股价正相关时，具备转型风险意识的投资者会增加绿色股投资并减少棕色股投资。文章还区分了模糊厌恶与风险厌恶，展示了投资者随概率更新投资组合的过程。 <div>
+We study an investor's optimal portfolio choice problem when they account for the impact of a possible future green transition, whose timing is uncertain. We model the green transition as a discontinuity in the stock price processes, driven by a single jump process with constant intensity, in which 'green' stocks increase in value and 'brown' stocks decrease in value. The investor is ambiguous about the timing of the green transition and designs an investment strategy which is robust to this risk. The investor has constant relative risk aversion preferences over both wealth and model ambiguity, which introduce a multiplicative ambiguity penalty for power utility and an additive ambiguity penalty for log utility. We separate the problem into pre- and post-transition cases, derive the solution, and provide a verification theorem. We further show that the log utility, ambiguity-neutral, and worst-case problems are obtained as special cases of our general problem. In a case study with one green and one brown stock, we show that when the stock prices are positively correlated, an investor who is aware of transition risk increases their investment in the green stock and reduces their investment in the brown stock, compared to when they ignore the possibility of a transition. We illustrate the difference between an ambiguity-averse and a risk-averse investor, and show how an ambiguity-averse investor re-allocates their portfolio as their view on the probability of a green transition changes.
+
+arXiv categories: q-fin.MF, q-fin.PM, q-fin.RM
+]]></content:encoded>
+<pubDate>Sat, 24 Oct 2026 10:48:43 +0000</pubDate>
+<pubDate>Sat, 24 Oct 2026 10:48:43 +0000</pubDate>
+</item>
+<item>
+<title>Optimal collective investment under regulatory uncertainty</title>
+<link>https://arxiv.org/abs/2610.32959</link>
+<guid>https://arxiv.org/abs/2610.32959</guid>
+<content:encoded><![CDATA[
+
+We study optimal collective investment subject to a Value-at-Risk (VaR)-type constraint that accounts for uncertainty about future regulatory requirements. The constraint incorporates several possible wealth thresholds and imposes a minimum weighted average probability of meeting them. We characterize the optimal terminal wealth, which combines regions of constant wealth at regulatory thresholds with Merton-type investment regions. Unlike a classical VaR constraint with only one threshold, our formulation generates protection against several thresholds. For two possible thresholds, we identify when both are protected and when protection concentrates on the larger one. Numerical results show that the regulatory constraint can substantially reshape the optimal payoff and generate large welfare losses relative to unconstrained investment when the required compliance probability is high, even the smaller wealth threshold is high, or initial capital is limited. In heterogeneous investor pools, welfare losses depend strongly on the composition of the risk aversions and the Pareto weights governing risk sharing. Losses are particularly pronounced when highly risk-averse investors dominate the pool. Moreover, investors with smaller capital contributions can bear disproportionately large shares of the total welfare loss, while larger contributors may bear less than their capital-proportional share. Thus, regulatory uncertainty not only reduces aggregate welfare but can also create substantial disparities in how its costs are distributed among investors.
+
+arXiv categories: q-fin.PM, q-fin.MF, q-fin.RM
+]]></content:encoded>
+<pubDate>Fri, 23 Oct 2026 17:50:55 +0000</pubDate>
+<pubDate>Fri, 23 Oct 2026 17:50:55 +0000</pubDate>
+</item>
+<item>
+<title>Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading</title>
+<link>https://arxiv.org/abs/2610.32237</link>
+<guid>https://arxiv.org/abs/2610.32237</guid>
+<content:encoded><![CDATA[
+
+In modern financial markets, more than 3/4th of the large volume trade is executed by algorithmic trading based on advanced trading strategies to attain higher precision and speed than traditional human traders. The conventional strategies focused on price-based indicators are inadequate in capturing the market dynamism arising from real-world events such as social sentiments, political instability, or sudden economic shifts. With the rise of Deep Reinforcement Learning (DRL) and data availability, there is a requirement for more efficient algorithms that can incorporate these external factors in trading strategies. DRL has shown potential in simulating real-world scenarios and in simplifying complex decision-making since DRL agents can automate the trading process i.e. executing trades in a manner comparable to human traders. They have shown reliable performance since they can update their policies based on risk and quantitative factors. In this paper, we propose a DRL approach based on partial and deep-infusion of sentimental analysis. It features distinct policy designs of actor-critic-based agents: only policy optimization (A2C & PPO) and policy optimization along with Q-learning principles (DDPG, TD3 & SAC). Our findings reveal, that the agents based on policy optimization combined with Q-learning, significantly and consistently demonstrate improved performance upon sentiment deep-infusion in profit maximization as well as risk-averse trading.
+
+arXiv categories: cs.AI, q-fin.CP, q-fin.PM
+]]></content:encoded>
+<pubDate>Fri, 23 Oct 2026 06:46:09 +0000</pubDate>
+<pubDate>Fri, 23 Oct 2026 06:46:09 +0000</pubDate>
+</item>
 
 <item>
 <title>Rachev-Ratio Portfolio Optimization with TimeGAN Scenarios: Replacement versus Supplementation</title>

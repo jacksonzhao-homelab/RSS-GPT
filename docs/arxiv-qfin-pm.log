@@ -46,3 +46,29 @@ Existing_entries: 6
 Fetching from https://rss.arxiv.org/rss/q-fin.PM
 append_entries: 0
 Finish: 2026-11-01 15:37:24.780227
+------------------------------------------------------
+Started: 2026-11-01 16:33:54.181949
+Existing_entries: 6
+Fetching from file://docs/arxiv-qfin-pm-raw.xml
+Token length: 1126
+Summarized using glm-4.7-flash
+Append: [The Generalised Kessler Syndrome and the Persian Gulf](https://arxiv.org/abs/2610.40129)
+Token length: 1060
+Summarized using glm-4.7-flash
+Append: [Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns](https://arxiv.org/abs/2610.39205)
+Token length: 1860
+Summarized using glm-4.7-flash
+Append: [Simple Portfolios that Deliver Consistent Decent Returns](https://arxiv.org/abs/2610.36491)
+Token length: 1887
+Summarized using glm-4.7-flash
+Append: [Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management](https://arxiv.org/abs/2610.37705)
+Token length: 1430
+Summarized using glm-4.7-flash
+Append: [Certifying Reward Alignment in Portfolio Reinforcement Learning](https://arxiv.org/abs/2610.34153)
+Token length: 1557
+Summarized using glm-4.7-flash
+Append: [Optimal portfolio choice under green transition timing risk](https://arxiv.org/abs/2610.33597)
+Append: [Optimal collective investment under regulatory uncertainty](https://arxiv.org/abs/2610.32959)
+Append: [Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading](https://arxiv.org/abs/2610.32237)
+append_entries: 8
+Finish: 2026-11-01 16:36:47.018373

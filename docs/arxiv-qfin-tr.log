@@ -19,3 +19,32 @@ Existing_entries: 3
 Fetching from https://rss.arxiv.org/rss/q-fin.TR
 append_entries: 0
 Finish: 2026-11-01 15:38:20.343100
+------------------------------------------------------
+Started: 2026-11-01 16:38:11.877838
+Existing_entries: 3
+Fetching from file://docs/arxiv-qfin-tr-raw.xml
+Token length: 1850
+Summarized using glm-4.7-flash
+Append: [Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana](https://arxiv.org/abs/2610.39458)
+Token length: 1123
+Summarized using glm-4.7-flash
+Append: [Calibration of Passive Market Impact with a Queue-Sensitive Propagator Model](https://arxiv.org/abs/2610.38442)
+Token length: 973
+Summarized using glm-4.7-flash
+Append: [Optimal Order Placement under a State-Dependent Hawkes Process Limit Order Book model](https://arxiv.org/abs/2610.37324)
+Token length: 1193
+Summarized using glm-4.7-flash
+Append: [Depositing More Should Not Earn Less: Supplier Income Monotonicity and Rate Curve Design in Pooled Lending Markets](https://arxiv.org/abs/2610.36899)
+Token length: 680
+Summarized using glm-4.7-flash
+Append: [Event definition and the branching ratio: Hawkes estimates of price-change clustering in the consolidated quote feed](https://arxiv.org/abs/2610.36317)
+Token length: 1887
+Summarized using glm-4.7-flash
+Append: [Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management](https://arxiv.org/abs/2610.37705)
+Append: [FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading](https://arxiv.org/abs/2610.36083)
+Append: [Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain](https://arxiv.org/abs/2610.35738)
+Append: [Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book](https://arxiv.org/abs/2610.34787)
+Append: [Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality](https://arxiv.org/abs/2610.33400)
+Append: [Optimal Size in Market Making under State-Dependent Hawkes Process](https://arxiv.org/abs/2610.31903)
+append_entries: 11
+Finish: 2026-11-01 16:41:06.109543

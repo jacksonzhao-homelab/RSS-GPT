@@ -190,3 +190,9 @@ Summarized using glm-4.7-flash
 Append: [shorting unprofitable international stocks against the s amp p 500](https://www.quantconnect.com/research/21634/shorting-unprofitable-international-stocks-against-the-s-amp-p-500/)
 append_entries: 1
 Finish: 2026-11-01 15:38:20.243699
+------------------------------------------------------
+Started: 2026-11-01 16:36:47.251678
+Existing_entries: 148
+Fetching from https://www.quantconnect.com/research.posts.sitemap.xml
+append_entries: 0
+Finish: 2026-11-01 16:36:47.565481

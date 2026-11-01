@@ -53,3 +53,33 @@ Existing_entries: 9
 Fetching from https://rss.arxiv.org/rss/q-fin.ST
 append_entries: 0
 Finish: 2026-11-01 15:37:24.729050
+------------------------------------------------------
+Started: 2026-11-01 16:31:26.004980
+Existing_entries: 9
+Fetching from file://docs/arxiv-qfin-st-raw.xml
+Token length: 1060
+Summarized using glm-4.7-flash
+Append: [Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns](https://arxiv.org/abs/2610.39205)
+Token length: 1123
+Summarized using glm-4.7-flash
+Append: [Calibration of Passive Market Impact with a Queue-Sensitive Propagator Model](https://arxiv.org/abs/2610.38442)
+Token length: 1466
+Summarized using glm-4.7-flash
+Append: [Contemporaneous Transmission Networks and Systemic Risk in European Banking](https://arxiv.org/abs/2610.37487)
+Token length: 680
+Summarized using glm-4.7-flash
+Append: [Event definition and the branching ratio: Hawkes estimates of price-change clustering in the consolidated quote feed](https://arxiv.org/abs/2610.36317)
+Token length: 1378
+Summarized using glm-4.7-flash
+Append: [FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading](https://arxiv.org/abs/2610.36083)
+Token length: 1345
+Summarized using glm-4.7-flash
+Append: [Weekend Crypto Volatility and Monday Market Risk](https://arxiv.org/abs/2610.35702)
+Summarization failed, append the original article
+error: Error code: 429 - {'error': {'code': '1305', 'message': '该模型当前访问量过大，请您稍后再试'}}
+Append: [Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book](https://arxiv.org/abs/2610.34787)
+Summarization failed, append the original article
+error: Error code: 429 - {'error': {'code': '1305', 'message': '该模型当前访问量过大，请您稍后再试'}}
+Append: [Compiling and forecasting implied volatility surfaces via survey sampling, tempered inverse-probability sequence learning, and causal activity clocks](https://arxiv.org/abs/2610.33438)
+append_entries: 8
+Finish: 2026-11-01 16:33:54.178031

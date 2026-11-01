@@ -1,9 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>q-fin.TR updates on arXiv.org</title>
-<link>http://rss.arxiv.org/rss/q-fin.TR</link>
+<title>arXiv q-fin.TR（近 10 天提交）</title>
+<link>https://arxiv.org/list/q-fin.TR/recent</link>
 
+<item>
+<title>Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana</title>
+<link>https://arxiv.org/abs/2610.39458</link>
+<guid>https://arxiv.org/abs/2610.39458</guid>
+<content:encoded><![CDATA[
+<div> pump.fun, 钱包组, 协调交易, 流动性曲线, 评估误差<br><br>总结:
+1. 研究分析了pump.fun上的钱包组，发现其分为序列创作者和早期买家圈。
+2. 验证显示早期买家获利，晚期亏损，早期信号对跟风者无利可图。
+3. 快速钱包群组虽能提高达到20 SOL的概率，但信号往往滞后。
+4. 文章指出数据评估存在误差，可能导致看似盈利的假象。 <div>
+We study coordinated groups of wallets on a bonding-curve launchpad (pump.fun on Solana), using a complete record of 200\,443 token launches, 15\,854\,121 curve trades and 51\,025\,958 SOL transfers over 88.3 hours. A prospective, multi-channel discovery procedure (co-buying, shared funding, joint signing, transfers, consolidation) yields 23\,710 wallet groups. Without ground-truth labels we validate them by out-of-sample link prediction, independent non-trading links and a comparison with naive co-buy clustering at equal numbers of flagged tokens: raw clustering collapses into one giant component, yet it ranks tokens at least as well as the groups, so the value of the structure is descriptive. Group activity is highly concentrated and splits into serial creators and long-lived rings of early buyers. Known members buy earlier than other buyers of the same token and extract more cash than an activity-matched placebo set, while late buyers' net cash flow is negative; tokens with members show a pump-like price path, but the contrast vanishes when controls are restricted to comparable tokens, so we report it as an association. A follower entering at the earliest group signal loses money out of sample in all 32 configurations and does no better than random entry. A few pools of tens to over a hundred fast wallets are associated with a two- to four-fold higher chance of reaching 20 SOL, also within creators, with a smaller excess at 60 SOL and none for graduation; on a final hold-out the team rules keep a precision of about one half to three quarters, yet many signals arrive when the curve already holds 20 SOL, one team supplies most of them, and they add no information beyond early curve state. We also document evaluation errors that turn the same data into apparent profit.
+
+arXiv categories: physics.soc-ph, cs.SI, q-fin.TR
+]]></content:encoded>
+<pubDate>Thu, 29 Oct 2026 06:29:11 +0000</pubDate>
+<pubDate>Thu, 29 Oct 2026 06:29:11 +0000</pubDate>
+</item>
+<item>
+<title>Calibration of Passive Market Impact with a Queue-Sensitive Propagator Model</title>
+<link>https://arxiv.org/abs/2610.38442</link>
+<guid>https://arxiv.org/abs/2610.38442</guid>
+<content:encoded><![CDATA[
+<div> 被动市场影响, 限价单, 价格分解, 订单流不平衡, Hawkes模型<br><br>总结: 本文构建了校准被动市场影响的框架，区别于市价单影响。基于Hawkes模型与队列反应动态，研究将价格分解为通用传播子项和状态相关校正项。该分解连接了微观结构与标准传播子模型。通过高频数据校准，发现被动影响项显著解释了价格变化，提升了模型拟合度及影响曲线预测的准确性。 <div>
+We develop a framework for calibrating passive market impact, defined as the price response to liquidity-providing limit orders, in contrast to the impact of liquidity-consuming market orders. We build on the model of Ouazzani Chahdi, Rosenbaum, and Szymanski (arxiv:2412.07461), which combines Hawkes-driven market-order flow with queue-reactive limit-order and cancellation dynamics. Within this model, we show that the price decomposes into a universal propagator term driven by signed order-flow imbalance and a state-dependent correction that captures the dependence of price sensitivity on volume at the best quotes. This decomposition links limit-order-book microstructure to standard propagator models and yields a regression on two observable signals: the propagator signal and the queue-weighted order-flow imbalance. We calibrate the model on high-frequency order-book data and find that the passive-impact term explains substantial variation in prices beyond the classical propagator, improving both model fit and the accuracy of predicted impact curves.
+
+arXiv categories: q-fin.TR, math.PR, q-fin.MF, q-fin.ST
+]]></content:encoded>
+<pubDate>Wed, 28 Oct 2026 08:22:05 +0000</pubDate>
+<pubDate>Wed, 28 Oct 2026 08:22:05 +0000</pubDate>
+</item>
+<item>
+<title>Optimal Order Placement under a State-Dependent Hawkes Process Limit Order Book model</title>
+<link>https://arxiv.org/abs/2610.37324</link>
+<guid>https://arxiv.org/abs/2610.37324</guid>
+<content:encoded><![CDATA[
+<div> Hawkes过程, 市场做市商, 动态规划, 库存惩罚, 最优报价
+<br><br>总结: 本文利用状态依赖的Hawkes过程和基于块的线性需求规格建模订单流。在二次终端库存惩罚下，通过连续时间离散状态动态规划，推导出依赖库存的最优报价及二次值函数递归公式。数值实验基于LOBSTER数据，表明该策略在1和3个tick时优于固定价差基准，但低于2个tick基准，验证了框架的数值实现及终端财富与库存惩罚目标的区别。 <div>
+We study optimal quote placement for a market maker facing order flow modeled by a state-dependent Hawkes process. A block-based linear demand specification links market-order counts to execution volumes, providing the demand moments required by a continuous time discrete state dynamic programming formulation. Under a quadratic terminal inventory penalty, we characterize inventory-dependent quotes and derive backward recursions for the coefficients of a quadratic value function. Numerical experiments using LOBSTER data examine quote distributions, inventory exposure, and terminal wealth. The implemented strategy yields higher aggregate terminal wealth than fixed-spread benchmarks at one and three ticks, but lower wealth than the two-tick benchmark. These results illustrate the framework's numerical implementation and distinguish terminal-wealth comparisons from evaluation under the inventory-penalized objective.
+
+arXiv categories: q-fin.TR, q-fin.CP, q-fin.MF
+]]></content:encoded>
+<pubDate>Tue, 27 Oct 2026 14:35:01 +0000</pubDate>
+<pubDate>Tue, 27 Oct 2026 14:35:01 +0000</pubDate>
+</item>
+<item>
+<title>Depositing More Should Not Earn Less: Supplier Income Monotonicity and Rate Curve Design in Pooled Lending Markets</title>
+<link>https://arxiv.org/abs/2610.36899</link>
+<guid>https://arxiv.org/abs/2610.36899</guid>
+<content:encoded><![CDATA[
+<div> 利用依赖型利率模型、供应商收入、弹性上限、Drift市场、设计约束
+
+<br><br>
+总结：文章分析了利用依赖型利率模型中，供应商收入可能随流动性增加而减少的条件（α(1+η)≤1）。在Drift市场实证中，发现部分时段供应商份额超过保护范围。协议将此转化为设计约束，通过设定各利用水平的保护份额上限来限制弹性。保护恒定份额导致幂律边界，保护新存款人导致双曲线边界。在多折点USDT市场中，合规修复通过影响收入对存款的响应来改变供应商收入。 <div>
+In utilization dependent interest rate models, adding liquidity can reduce a supplier's total interest income even as the supplier's balance increases. A supplier holding a fraction $α$ of final pool supply keeps income nondecreasing with a marginal deposit exactly when $α(1+η)\leq1$, where $η$ is the elasticity of the borrow rate with respect to utilization. When the condition fails, the supplier can instead raise its income by withdrawing, which pushes utilization further up. On two public Drift markets, a lender held more of the pool than the curve protected in at least one hour in nine on SOL and one in thirteen on USDC. A protocol turns this into a design constraint by choosing, at each utilization, the largest supplier share it intends to protect. That choice caps the elasticity, and integrating the cap describes every admissible curve. Protecting the same share at every utilization gives a power law boundary, and protecting every fresh depositor gives a hyperbolic one. On a multiple kink USDT market, compliant repairs can lower or raise supplier income, because the constraint governs how income responds to a deposit and not the price level.
+
+arXiv categories: q-fin.TR
+]]></content:encoded>
+<pubDate>Tue, 27 Oct 2026 09:31:12 +0000</pubDate>
+<pubDate>Tue, 27 Oct 2026 09:31:12 +0000</pubDate>
+</item>
+<item>
+<title>Event definition and the branching ratio: Hawkes estimates of price-change clustering in the consolidated quote feed</title>
+<link>https://arxiv.org/abs/2610.36317</link>
+<guid>https://arxiv.org/abs/2610.36317</guid>
+<content:encoded><![CDATA[
+<div> Hawkes模型, 价格变动, 大tick股票, 内核成分, 临界值<br><br>总结: Hawkes模型发现亚毫秒内核和临界分支比。在大tick股票中，该内核源于报价系统的构建（锁单/枯竭），被误读为激发。将事件定义为持续1毫秒的中间价水平可去除该成分。原始拟合显示三倍内核质量在1秒内，仿真重现。因分支比与基线权衡，报告固定窗口内核质量。 <div>
+Hawkes models of price changes in the consolidated US quote feed find a sub-millisecond kernel component and a branching ratio near criticality. We show that in large-tick stocks the first is the feed's construction: half of NBBO changes are locks or depleted quotes, resolved within a millisecond, which the model reads as excitation. Defining the event as a mid-price level persisting for one millisecond removes the component. Raw fits put three times the clean kernel mass within one second, which a simulation reproduces. Since the total branching ratio trades off against the baseline, we report kernel mass on a fixed window.
+
+arXiv categories: q-fin.ST, q-fin.CP, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 21:42:56 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 21:42:56 +0000</pubDate>
+</item>
+<item>
+<title>Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management</title>
+<link>https://arxiv.org/abs/2610.37705</link>
+<guid>https://arxiv.org/abs/2610.37705</guid>
+<content:encoded><![CDATA[
+<div> 财富管理, AI代理, 尾部风险, 模型集中度, 同步自动化
+
+<br><br>总结: 基于真实数据构建AI代理模型，发现有效决策者仅约2.0，导致个股拥挤但未引发市场清算。指数尾部损失随代理采用率平方根增长，比周期性机器人高1.47-1.90倍，主要由同步自动化而非模型集中度驱动。解耦自动化可减少63%尾部损失且成本低。脆弱性指数预测效果佳，历史回测显示2020年崩盘因代理层加深了858个基点。 <div>
+Conversational AI agents are turning wealth management into a continuous loop of market analysis, allocation, risk checks and execution, run for millions of clients on a handful of foundation models. We build a multi-asset agent-based model of this layer, calibrated to measured model concentration, cross-model correlation, retail turnover and 33 years of real equity returns, and ask when the layer amplifies market declines and what prevents it. The effective number of independent decision-makers is bounded however many clients the layer serves: about 2.0 at today's consumer concentration. This monoculture of views drives crowding in individual securities and sets the blast radius of a compromised model provider, but it does not drive market-wide liquidation. Index tail losses rise with the square root of agentic adoption, are 1.47-1.90 times larger under an agentic than under a periodic robo-advice architecture, and do not rise with model concentration; synchronized automation (risk overlays, drawdown cuts and attention-driven execution) drives them. A fragility index computed from aggregate flow, public returns and an impact estimate forecasts tail liquidation out of sample (hold-out R^2 of 0.56) far better than concentration or correlation measures. Decorrelating the automation, not the models, works: dispersing overlay parameters, staging execution and a participation breaker together cut tail liquidation by 63% at no measurable cost to client welfare, whereas provider diversification has no effect. Because the statistics required are sums, they can be computed across platforms under secure aggregation with differential privacy at negligible cost for realistic client populations. In historical replays, an agentic layer holding 10% of the market would have deepened the 2020 crash by about 858 basis points.
+
+arXiv categories: q-fin.RM, q-fin.PM, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 18:30:56 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 18:30:56 +0000</pubDate>
+</item>
+<item>
+<title>FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading</title>
+<link>https://arxiv.org/abs/2610.36083</link>
+<guid>https://arxiv.org/abs/2610.36083</guid>
+<content:encoded><![CDATA[
+
+Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language models (LLMs). However, existing approaches remain confined to predicting the sentiment of each article in isolation and operate as black boxes, which limits contextual understanding and hinders deployment in high-stakes financial decision-making. To this end, we introduce FinLLM-KG, a model-agnostic framework that combines causal LLMs with a financial knowledge graph, in order to inject temporally grounded, company-level knowledge from SEC 10-K filings at inference time, without updating model weights. Within FinLLM-KG, context is supplied either as a natural-language company profile or as a small set of relevance-ranked factual triples. This enables sentiment predictions to account for broader firm-level information rather than the article alone, at almost zero computational cost and for any causal LLM. In addition, attributing each article-level sentiment score to individual sentences and to the retrieved knowledge-graph facts makes the evidence behind the prediction inspectable, thereby enhancing explainability and supporting human-in-the-loop review. Simulations demonstrate that FinLLM-KG consistently improves portfolio performance over the state-of-the-art baseline.
+
+arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
+</item>
+<item>
+<title>Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain</title>
+<link>https://arxiv.org/abs/2610.35738</link>
+<guid>https://arxiv.org/abs/2610.35738</guid>
+<content:encoded><![CDATA[
+
+Demand on blockchain-based marketplaces arrives in bursts and at a high rate. On these platforms the data are completely visible, which makes it feasible to compare the bursty demand against the usual load. The congestion manifests as an increased demand for gas, the primary resource a blockchain sells. Existing studies consider how to price the gas. The demand itself, and what it is made of during bursts, has not been measured. We measure it on Robinhood Chain, a layer-2 blockchain that quickly became a venue for trading tokenized equities and memecoins. We collected the data from every block of its first three active months and more than 50 million Uniswap swaps that occurred during bursty periods. We find that a burst trades about as many pools as a quiet period, mostly different ones, and trades them harder, on top of elevated demand that accumulated for hours. With the bursts aligned on their peaks, the median peak is 2.5 times the usual load. Both the rise and the fall of the demand are described by the sum of two exponential functions with different timescales, a slow one of hours and a fast one of minutes. Against a matched quiet period, a burst has 1.05 times the pools, 1.40 times the trades, and 1.21 times the senders. We use two models to explain the arrival of bursts: externally triggered cascades and self-excitation. The former fits the data relatively better. Inside a burst, the entry of each trader into a pool is followed for about 24 seconds by more entries than the existing traders predict. Whether this is because of imitation or because of a shared signal is left open.
+
+arXiv categories: econ.EM, cs.SI, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
+</item>
+<item>
+<title>Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book</title>
+<link>https://arxiv.org/abs/2610.34787</link>
+<guid>https://arxiv.org/abs/2610.34787</guid>
+<content:encoded><![CDATA[
+
+Prices cluster at round numbers, a pattern often interpreted as evidence that these levels act as price barriers. This pattern also admits a mechanical explanation: more liquidity rests there, and prices take longer to leave deeper queues. Limit order book data allow us to distinguish these mechanisms through a tick-grid framework in which local time counts departures and level-wise volatility reflects the departure hazard. Using data for five Nasdaq stocks throughout 2025, we find that round levels attract more liquidity but do not exhibit longer depth-adjusted durations. Intel and SoFi show directional effects, with departures biased away from round levels.
+
+arXiv categories: q-fin.TR, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+</item>
+<item>
+<title>Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality</title>
+<link>https://arxiv.org/abs/2610.33400</link>
+<guid>https://arxiv.org/abs/2610.33400</guid>
+<content:encoded><![CDATA[
+
+We develop a new order-level proxy for high-frequency trading (HFT) activity based on precise order placement and study its effects on market quality. With quotes updating multiple times per second, millisecond-level order-book access makes high-frequency traders more likely to submit active exact-match orders, defined as limit orders priced exactly at the prevailing best opposite-side quote. Using Shenzhen Stock Exchange data, we validate the proxy: active exact-match orders respond faster to quote updates, cancel more rapidly, concentrate when depth imbalance is favorable and spreads are narrow, and predict mid-quote returns from 100 milliseconds through ten minutes. A difference-in-differences design exploiting cross-channel variation in order dissemination latency at the market open shows that lower latency increases active exact-match shares. This variation yields plausibly causal evidence that latency-induced HFT raises short-horizon price variation, wide-spread incidence, and adverse-selection exposure, while realized spreads decline and pricing error falls modestly. Unlike developed markets, China's T+1 constraint, absence of maker-taker rebates, and limits on rapid quote revision tilt speed advantages toward directional liquidity taking, highlighting how market design shapes the channel through which speed affects market quality.
+
+arXiv categories: q-fin.TR
+]]></content:encoded>
+<pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
+<pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
+</item>
+<item>
+<title>Optimal Size in Market Making under State-Dependent Hawkes Process</title>
+<link>https://arxiv.org/abs/2610.31903</link>
+<guid>https://arxiv.org/abs/2610.31903</guid>
+<content:encoded><![CDATA[
+
+We study market making with a parametric model of executed volume that accounts for quote placement and state-dependent order flow. Executed volume is expressed as the product of an average order size, an exponential demand function, and a Prony-series multiplier depending on quote depth, market-order count constructed from a state-dependent Hawkes model. An approximation result for finite Prony sums on a compact state domain provides a mathematical basis for the representation. An empirical study of limit-order-book data examines the calibrated demand and intensity models, sensitivity to inventory restrictions, and the resulting placement policies. In retrospective evaluations conditional on realised order-flow paths, the selected calibration achieves higher terminal utility than a baseline while respecting the prescribed inventory bound. The comparisons also distinguish the contribution of trading revenues from that of inventory control. The resulting closed-form volume specification takes placement levels as inputs and can therefore be used with alternative quoting rules.
+
+arXiv categories: q-fin.TR, q-fin.CP, q-fin.MF
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
+<pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
+</item>
 
 <item>
 <title>Understanding the Inner Workings of a State-Space Foundation Model for Limit Order Books</title>
