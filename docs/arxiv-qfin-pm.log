@@ -72,3 +72,9 @@ Append: [Optimal collective investment under regulatory uncertainty](https://arx
 Append: [Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading](https://arxiv.org/abs/2610.32237)
 append_entries: 8
 Finish: 2026-11-01 16:36:47.018373
+------------------------------------------------------
+Started: 2026-11-01 16:45:00.335493
+Existing_entries: 14
+Fetching from file://docs/arxiv-qfin-pm-raw.xml
+append_entries: 0
+Finish: 2026-11-01 16:45:00.348418

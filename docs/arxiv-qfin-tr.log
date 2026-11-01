@@ -48,3 +48,9 @@ Append: [Tracking High-Frequency Trading Activity in China and Its Effects on Ma
 Append: [Optimal Size in Market Making under State-Dependent Hawkes Process](https://arxiv.org/abs/2610.31903)
 append_entries: 11
 Finish: 2026-11-01 16:41:06.109543
+------------------------------------------------------
+Started: 2026-11-01 16:45:01.150503
+Existing_entries: 14
+Fetching from file://docs/arxiv-qfin-tr-raw.xml
+append_entries: 0
+Finish: 2026-11-01 16:45:01.164777

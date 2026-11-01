@@ -83,3 +83,15 @@ error: Error code: 429 - {'error': {'code': '1305', 'message': '该模型当前�
 Append: [Compiling and forecasting implied volatility surfaces via survey sampling, tempered inverse-probability sequence learning, and causal activity clocks](https://arxiv.org/abs/2610.33438)
 append_entries: 8
 Finish: 2026-11-01 16:33:54.178031
+------------------------------------------------------
+Started: 2026-11-01 16:44:31.333460
+Existing_entries: 15
+Fetching from file://docs/arxiv-qfin-st-raw.xml
+Token length: 705
+Summarized using glm-4.7-flash
+Append: [Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book](https://arxiv.org/abs/2610.34787)
+Token length: 1864
+Summarized using glm-4.7-flash
+Append: [Compiling and forecasting implied volatility surfaces via survey sampling, tempered inverse-probability sequence learning, and causal activity clocks](https://arxiv.org/abs/2610.33438)
+append_entries: 2
+Finish: 2026-11-01 16:45:00.326189

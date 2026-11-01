@@ -5,16 +5,43 @@
 <link>https://arxiv.org/list/q-fin.ST/recent</link>
 
 <item>
+<title>Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book</title>
+<link>https://arxiv.org/abs/2610.34787</link>
+<guid>https://arxiv.org/abs/2610.34787</guid>
+<content:encoded><![CDATA[
+<div> 价格聚类, 限价订单簿, Tick网格框架, 深度调整持续时间, 流动性<br><br>总结:文章利用Tick网格框架分析限价订单簿数据，探讨了价格聚集现象。<br>1. 研究发现圆整水平确实吸引更多流动性。<br>2. 但深度调整持续时间在圆整水平并无显著差异。<br>3. Intel和SoFi显示出方向性效应，价格倾向于离开圆整水平。 <div>
+Prices cluster at round numbers, a pattern often interpreted as evidence that these levels act as price barriers. This pattern also admits a mechanical explanation: more liquidity rests there, and prices take longer to leave deeper queues. Limit order book data allow us to distinguish these mechanisms through a tick-grid framework in which local time counts departures and level-wise volatility reflects the departure hazard. Using data for five Nasdaq stocks throughout 2025, we find that round levels attract more liquidity but do not exhibit longer depth-adjusted durations. Intel and SoFi show directional effects, with departures biased away from round levels.
+
+arXiv categories: q-fin.TR, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+</item>
+<item>
+<title>Compiling and forecasting implied volatility surfaces via survey sampling, tempered inverse-probability sequence learning, and causal activity clocks</title>
+<link>https://arxiv.org/abs/2610.33438</link>
+<guid>https://arxiv.org/abs/2610.33438</guid>
+<content:encoded><![CDATA[
+<div> 隐含波动率, 有限总体抽样, LSTM, 非平稳性, 预测能力
+<br><br>总结: 本文基于2018-2025年NVDA数据，研究IV曲面与风险预测。一是IV曲面重建中，基于滞后离散度的分层插值优于PPS；二是LSTM训练中，PPS和Neyman设计比SRS保留更多尾部窗口，虽节省时间但增量收益不明显；三是短期价格不可预测，远期IV仅具均值回归技能且未胜过HAR-IV；四是在价格大幅扩张期间，滚动量和美元时钟稳定了条形率并压缩了日内回报峰度。 <div>
+Compiling implied volatility (IV) surfaces and forecasting derivative risk from high-frequency equity and options feeds requires addressing contract heterogeneity, schema shifts, volatility clustering, and non-stationary trading activity. Using a split-adjusted NVIDIA (NVDA) equity and options panel (2018-2025), this study integrates finite-population survey sampling, tempered inverse-probability sequence learning, and causal activity clocks. Four findings emerge. First, cross-sectional surface accuracy depends on matching the sampling design to the target functional: plug-in stratified allocations using lagged cell dispersion improve equal-weighted surface reconstruction with full grid coverage, whereas liquidity-weighted probability proportional to size (PPS) sampling excels on liquidity-weighted targets by construction yet inflates error when misapplied. Second, in longitudinal LSTM sequence training, PPS and Neyman designs retain more tail-volatility windows than simple random sampling (SRS); all three designs are equivalent to full-census training within chosen margins while cutting training time, though incremental forecasting gains of informative selection over SRS are not established. Third, out-of-sample evaluation shows a predictability contrast: short-horizon prices are not forecastable beyond a random walk with drift among tested models, whereas forward IV shows descriptive mean-reversion skill concentrated in a few post-shock reversal sessions (insignificant under session-clustered tests), with sequence models not beating a linear HAR-IV benchmark and feature pruning driving stability. Fourth, across a 6.3x start-to-end (nearly twentyfold trough-to-peak) price expansion, rolling volume and dollar clocks stabilize bar rates and compress intraday return kurtosis beyond diurnal scaling.
+
+arXiv categories: stat.AP, q-fin.ST
+]]></content:encoded>
+<pubDate>Sat, 24 Oct 2026 04:27:14 +0000</pubDate>
+<pubDate>Sat, 24 Oct 2026 04:27:14 +0000</pubDate>
+</item>
+
+<item>
 <title>Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns</title>
 <link>https://arxiv.org/abs/2610.39205</link>
 <guid>https://arxiv.org/abs/2610.39205</guid>
 <content:encoded><![CDATA[
-<div> Sparse Autoencoder, Cryptocurrency Returns, Portfolio Diversification, Low Volatility, Factor Stability<br><br>总结: 本文利用稀疏自编码器（SAE）提取金融因子以解决神经因子解释性差及风险不明的问题。研究发现SAE投资组合具有较低波动性，体现了资产间的低相关性，从而支持了投资组合的分散化。然而，SAE并未在风险调整后收益上超越简单的反向策略，且其因子身份在训练中不稳定。本文的贡献在于明确将这种分散化效应与关于Alpha或因子稳定性的主张区分开来。 <div>
+<div> Sparse Autoencoder, Cryptocurrency Returns, Portfolio Diversification, Low Volatility, Factor Stability<br /><br />总结: 本文利用稀疏自编码器（SAE）提取金融因子以解决神经因子解释性差及风险不明的问题。研究发现SAE投资组合具有较低波动性，体现了资产间的低相关性，从而支持了投资组合的分散化。然而，SAE并未在风险调整后收益上超越简单的反向策略，且其因子身份在训练中不稳定。本文的贡献在于明确将这种分散化效应与关于Alpha或因子稳定性的主张区分开来。 <div>
 Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SAE with common benchmarks in a time-ordered evaluation. We find consistently lower volatility in SAE portfolios and link this result to lower correlations among the selected assets. However, the SAE does not outperform a simple contrarian strategy on risk-adjusted return, and its factor identities are not stable across training runs. Our contribution is to show that sparse coding can support portfolio diversification, while clearly separating this risk effect from claims about alpha or stable factor identities.
 
 arXiv categories: cs.LG, q-fin.PM, q-fin.ST
 ]]></content:encoded>
-<pubDate>Thu, 29 Oct 2026 02:28:10 +0000</pubDate>
 <pubDate>Thu, 29 Oct 2026 02:28:10 +0000</pubDate>
 </item>
 <item>
@@ -23,12 +50,11 @@ arXiv categories: cs.LG, q-fin.PM, q-fin.ST
 <guid>https://arxiv.org/abs/2610.38442</guid>
 <content:encoded><![CDATA[
 <div> 被动市场影响, Hawkes模型, 价格分解, 订单流失衡, 微观结构
-<br><br>总结: 本文提出被动市场影响框架，基于Hawkes驱动的订单流与队列反应模型。研究发现价格分解为通用传播项和依赖于最佳报价成交量的状态依赖修正项。通过回归可观测信号（传播信号与队列加权订单流失衡）进行校准。结果表明，被动影响项显著解释了价格变化，优于经典模型，提升了拟合度和预测精度。 <div>
+<br /><br />总结: 本文提出被动市场影响框架，基于Hawkes驱动的订单流与队列反应模型。研究发现价格分解为通用传播项和依赖于最佳报价成交量的状态依赖修正项。通过回归可观测信号（传播信号与队列加权订单流失衡）进行校准。结果表明，被动影响项显著解释了价格变化，优于经典模型，提升了拟合度和预测精度。 <div>
 We develop a framework for calibrating passive market impact, defined as the price response to liquidity-providing limit orders, in contrast to the impact of liquidity-consuming market orders. We build on the model of Ouazzani Chahdi, Rosenbaum, and Szymanski (arxiv:2412.07461), which combines Hawkes-driven market-order flow with queue-reactive limit-order and cancellation dynamics. Within this model, we show that the price decomposes into a universal propagator term driven by signed order-flow imbalance and a state-dependent correction that captures the dependence of price sensitivity on volume at the best quotes. This decomposition links limit-order-book microstructure to standard propagator models and yields a regression on two observable signals: the propagator signal and the queue-weighted order-flow imbalance. We calibrate the model on high-frequency order-book data and find that the passive-impact term explains substantial variation in prices beyond the classical propagator, improving both model fit and the accuracy of predicted impact curves.
 
 arXiv categories: q-fin.TR, math.PR, q-fin.MF, q-fin.ST
 ]]></content:encoded>
-<pubDate>Wed, 28 Oct 2026 08:22:05 +0000</pubDate>
 <pubDate>Wed, 28 Oct 2026 08:22:05 +0000</pubDate>
 </item>
 <item>
@@ -37,7 +63,7 @@ arXiv categories: q-fin.TR, math.PR, q-fin.MF, q-fin.ST
 <guid>https://arxiv.org/abs/2610.37487</guid>
 <content:encoded><![CDATA[
 <div> 欧洲银行, 系统性暴露, 递归非高斯网络, 传导效应, 风险评分
-<br><br>总结:
+<br /><br />总结:
 1. 本文研究了欧洲银行的系统性暴露，利用递归非高斯网络模型构建了基于市值加权的系统性影响评分（SIS）和系统性脆弱性评分（SVS）。
 2. 研究揭示了银行间不同的传导与接收角色，发现接收角色比传导角色更具可重复性。
 3. 波动率标准化降低了检测到的依赖性，但全样本模型未满足独立性标准，且排序选择影响结果。
@@ -47,7 +73,6 @@ We study how contemporaneous equity-return transmission shapes systemic exposure
 arXiv categories: q-fin.ST, econ.EM
 ]]></content:encoded>
 <pubDate>Tue, 27 Oct 2026 16:14:07 +0000</pubDate>
-<pubDate>Tue, 27 Oct 2026 16:14:07 +0000</pubDate>
 </item>
 <item>
 <title>Event definition and the branching ratio: Hawkes estimates of price-change clustering in the consolidated quote feed</title>
@@ -55,7 +80,7 @@ arXiv categories: q-fin.ST, econ.EM
 <guid>https://arxiv.org/abs/2610.36317</guid>
 <content:encoded><![CDATA[
 <div> Hawkes模型, 价格变化, 亚毫秒级核组件, NBBO, 报价源
-<br><br>总结:
+<br /><br />总结:
 *   Hawkes模型在分析价格变化时发现了亚毫秒级核组件和临界分支比。
 *   在大额报价股票中，该组件源于NBBO报价源的构造，其中一半的变化是锁单或报价耗尽，在1毫秒内解决。
 *   将事件定义为持续1毫秒的中间价格可移除此组件；原始拟合显示1秒内有3倍核质量，模拟结果证实了这一点。
@@ -65,7 +90,6 @@ Hawkes models of price changes in the consolidated US quote feed find a sub-mill
 arXiv categories: q-fin.ST, q-fin.CP, q-fin.TR
 ]]></content:encoded>
 <pubDate>Mon, 26 Oct 2026 21:42:56 +0000</pubDate>
-<pubDate>Mon, 26 Oct 2026 21:42:56 +0000</pubDate>
 </item>
 <item>
 <title>FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading</title>
@@ -73,12 +97,11 @@ arXiv categories: q-fin.ST, q-fin.CP, q-fin.TR
 <guid>https://arxiv.org/abs/2610.36083</guid>
 <content:encoded><![CDATA[
 <div> Financial Sentiment Analysis, Causal LLMs, Knowledge Graph, Explainability, FinLLM-KG
-<br><br>总结: 现有金融情感分析孤立预测且是黑盒。为此，提出FinLLM-KG框架，结合因果LLM与金融知识图谱。该方法在推理时注入SEC 10-K的公司级知识，无需更新权重且计算成本低。通过归因机制增强了可解释性。模拟表明，该框架持续优于最先进基线，提升了投资组合表现。 <div>
+<br /><br />总结: 现有金融情感分析孤立预测且是黑盒。为此，提出FinLLM-KG框架，结合因果LLM与金融知识图谱。该方法在推理时注入SEC 10-K的公司级知识，无需更新权重且计算成本低。通过归因机制增强了可解释性。模拟表明，该框架持续优于最先进基线，提升了投资组合表现。 <div>
 Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language models (LLMs). However, existing approaches remain confined to predicting the sentiment of each article in isolation and operate as black boxes, which limits contextual understanding and hinders deployment in high-stakes financial decision-making. To this end, we introduce FinLLM-KG, a model-agnostic framework that combines causal LLMs with a financial knowledge graph, in order to inject temporally grounded, company-level knowledge from SEC 10-K filings at inference time, without updating model weights. Within FinLLM-KG, context is supplied either as a natural-language company profile or as a small set of relevance-ranked factual triples. This enables sentiment predictions to account for broader firm-level information rather than the article alone, at almost zero computational cost and for any causal LLM. In addition, attributing each article-level sentiment score to individual sentences and to the retrieved knowledge-graph facts makes the evidence behind the prediction inspectable, thereby enhancing explainability and supporting human-in-the-loop review. Simulations demonstrate that FinLLM-KG consistently improves portfolio performance over the state-of-the-art baseline.
 
 arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
 ]]></content:encoded>
-<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
 <pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
 </item>
 <item>
@@ -88,7 +111,7 @@ arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
 <content:encoded><![CDATA[
 <div> 加密货币 周末波动率 周一方差 异质自回归模型 ETF批准
 
-<br><br>总结:
+<br /><br />总结:
 1. 研究考察了周末加密货币波动率对周一股票、大宗商品及固定收益市场方差的影响。
 2. 利用2017-2026数据，在异质自回归模型中引入共同周末因子，发现2024年后预测内容显著增强。
 3. 周末因子变动与周一方差显著正相关，能降低预测损失，且优于周五波动率及币种特异性信息。
@@ -98,7 +121,6 @@ Cryptocurrencies trade continuously while major traditional markets close over t
 
 arXiv categories: q-fin.ST
 ]]></content:encoded>
-<pubDate>Mon, 26 Oct 2026 16:27:42 +0000</pubDate>
 <pubDate>Mon, 26 Oct 2026 16:27:42 +0000</pubDate>
 </item>
 <item>

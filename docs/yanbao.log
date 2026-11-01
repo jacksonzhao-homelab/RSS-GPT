@@ -43,3 +43,9 @@ Summarized using glm-4.7-flash
 Append: [市场情绪低点已现，关注资金承接力度](https://data.eastmoney.com/report/zw_strategy.jshtml?infocode=AP202610251830896571)
 append_entries: 3
 Finish: 2026-11-01 16:38:11.875007
+------------------------------------------------------
+Started: 2026-11-01 16:45:01.131359
+Existing_entries: 3
+Fetching from file://docs/yanbao_raw.xml
+append_entries: 0
+Finish: 2026-11-01 16:45:01.141749
