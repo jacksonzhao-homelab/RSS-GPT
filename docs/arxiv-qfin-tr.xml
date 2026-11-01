@@ -4,6 +4,91 @@
 <title>arXiv q-fin.TR（近 10 天提交）</title>
 <link>https://arxiv.org/list/q-fin.TR/recent</link>
 
+<item>
+<title>FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading</title>
+<link>https://arxiv.org/abs/2610.36083</link>
+<guid>https://arxiv.org/abs/2610.36083</guid>
+<content:encoded><![CDATA[
+<div> FinLLM-KG, 金融情感分析, 知识图谱, 因果LLM, 可解释性
+
+<br><br>总结:
+针对现有金融情感分析局限于孤立文章、缺乏语境及黑盒不可解释的问题。
+提出FinLLM-KG框架，结合因果LLM与金融知识图谱，利用SEC 10-K文件注入公司级知识。
+该方法无需更新权重，支持自然语言或三元组输入，在零计算成本下提升语境理解与投资组合表现。
+同时将情感归因于句子和检索事实，增强可解释性以支持人工审查。 <div>
+Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language models (LLMs). However, existing approaches remain confined to predicting the sentiment of each article in isolation and operate as black boxes, which limits contextual understanding and hinders deployment in high-stakes financial decision-making. To this end, we introduce FinLLM-KG, a model-agnostic framework that combines causal LLMs with a financial knowledge graph, in order to inject temporally grounded, company-level knowledge from SEC 10-K filings at inference time, without updating model weights. Within FinLLM-KG, context is supplied either as a natural-language company profile or as a small set of relevance-ranked factual triples. This enables sentiment predictions to account for broader firm-level information rather than the article alone, at almost zero computational cost and for any causal LLM. In addition, attributing each article-level sentiment score to individual sentences and to the retrieved knowledge-graph facts makes the evidence behind the prediction inspectable, thereby enhancing explainability and supporting human-in-the-loop review. Simulations demonstrate that FinLLM-KG consistently improves portfolio performance over the state-of-the-art baseline.
+
+arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
+</item>
+<item>
+<title>Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain</title>
+<link>https://arxiv.org/abs/2610.35738</link>
+<guid>https://arxiv.org/abs/2610.35738</guid>
+<content:encoded><![CDATA[
+<div> 区块链, 突发需求, Gas 费用, 外部触发级联, 模仿行为
+
+<br><br>
+总结: 1. 分析了 Robinhood Chain 上前三个月超过 5000 万次 Uniswap 交换数据。 2. 突发期间交易量与平静期相当但更频繁，峰值是中位值的 2.5 倍，呈双指数衰减。 3. 相比平静期，突发涉及更多发件人和交易。 4. 外部触发级联模型比自激模型拟合更好。 5. 突发期间存在约 24 秒的模仿行为延迟。 <div>
+Demand on blockchain-based marketplaces arrives in bursts and at a high rate. On these platforms the data are completely visible, which makes it feasible to compare the bursty demand against the usual load. The congestion manifests as an increased demand for gas, the primary resource a blockchain sells. Existing studies consider how to price the gas. The demand itself, and what it is made of during bursts, has not been measured. We measure it on Robinhood Chain, a layer-2 blockchain that quickly became a venue for trading tokenized equities and memecoins. We collected the data from every block of its first three active months and more than 50 million Uniswap swaps that occurred during bursty periods. We find that a burst trades about as many pools as a quiet period, mostly different ones, and trades them harder, on top of elevated demand that accumulated for hours. With the bursts aligned on their peaks, the median peak is 2.5 times the usual load. Both the rise and the fall of the demand are described by the sum of two exponential functions with different timescales, a slow one of hours and a fast one of minutes. Against a matched quiet period, a burst has 1.05 times the pools, 1.40 times the trades, and 1.21 times the senders. We use two models to explain the arrival of bursts: externally triggered cascades and self-excitation. The former fits the data relatively better. Inside a burst, the entry of each trader into a pool is followed for about 24 seconds by more entries than the existing traders predict. Whether this is because of imitation or because of a shared signal is left open.
+
+arXiv categories: econ.EM, cs.SI, q-fin.TR
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
+</item>
+<item>
+<title>Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book</title>
+<link>https://arxiv.org/abs/2610.34787</link>
+<guid>https://arxiv.org/abs/2610.34787</guid>
+<content:encoded><![CDATA[
+<div> 价格簇, 流动性, Tick-grid, 限价订单簿, 深度调整
+<br><br>总结:
+1. 文章利用Tick-grid框架和限价订单簿数据，区分了价格簇背后的流动性吸引与停留时间延长机制。
+2. 研究发现圆整水平虽然吸引了更多流动性，但深度调整后的停留时间并未显著延长。
+3. 具体分析表明，英特尔和SoFi等股票存在价格倾向于远离圆整水平的方向性偏差。 <div>
+Prices cluster at round numbers, a pattern often interpreted as evidence that these levels act as price barriers. This pattern also admits a mechanical explanation: more liquidity rests there, and prices take longer to leave deeper queues. Limit order book data allow us to distinguish these mechanisms through a tick-grid framework in which local time counts departures and level-wise volatility reflects the departure hazard. Using data for five Nasdaq stocks throughout 2025, we find that round levels attract more liquidity but do not exhibit longer depth-adjusted durations. Intel and SoFi show directional effects, with departures biased away from round levels.
+
+arXiv categories: q-fin.TR, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
+</item>
+<item>
+<title>Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality</title>
+<link>https://arxiv.org/abs/2610.33400</link>
+<guid>https://arxiv.org/abs/2610.33400</guid>
+<content:encoded><![CDATA[
+<div> 高频交易, 订单级代理指标, 活跃精确匹配订单, 延迟, 市场质量
+<br><br>总结:
+1. 文章提出了一种基于精确订单放置的高频交易代理指标，称为活跃精确匹配订单。
+2. 利用深交所数据验证，该指标响应迅速、取消快、集中度高，并能预测回报。
+3. 通过利用开盘传播延迟差异发现，低延迟显著增加了此类订单。
+4. 结果表明，延迟降低导致短期价格波动加大、价差更宽、逆向选择增加，但实际价差下降，定价误差微降。
+5. 中国特有的市场设计使速度优势倾向于方向性流动性吃单。 <div>
+We develop a new order-level proxy for high-frequency trading (HFT) activity based on precise order placement and study its effects on market quality. With quotes updating multiple times per second, millisecond-level order-book access makes high-frequency traders more likely to submit active exact-match orders, defined as limit orders priced exactly at the prevailing best opposite-side quote. Using Shenzhen Stock Exchange data, we validate the proxy: active exact-match orders respond faster to quote updates, cancel more rapidly, concentrate when depth imbalance is favorable and spreads are narrow, and predict mid-quote returns from 100 milliseconds through ten minutes. A difference-in-differences design exploiting cross-channel variation in order dissemination latency at the market open shows that lower latency increases active exact-match shares. This variation yields plausibly causal evidence that latency-induced HFT raises short-horizon price variation, wide-spread incidence, and adverse-selection exposure, while realized spreads decline and pricing error falls modestly. Unlike developed markets, China's T+1 constraint, absence of maker-taker rebates, and limits on rapid quote revision tilt speed advantages toward directional liquidity taking, highlighting how market design shapes the channel through which speed affects market quality.
+
+arXiv categories: q-fin.TR
+]]></content:encoded>
+<pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
+<pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
+</item>
+<item>
+<title>Optimal Size in Market Making under State-Dependent Hawkes Process</title>
+<link>https://arxiv.org/abs/2610.31903</link>
+<guid>https://arxiv.org/abs/2610.31903</guid>
+<content:encoded><![CDATA[
+<div> 市场做市, 执行量, Hawkes模型, Prony级数, 限价订单簿
+<br><br>总结: 本文提出一种包含平均订单规模、指数需求函数及状态依赖Prony级数乘数的执行量参数模型，利用Hawkes模型构建市场订单计数。基于限价订单簿数据校准模型，利用紧致状态域上的近似结果作为数学基础。实证显示，该模型在满足库存约束下比基线具有更高效用，有效区分了交易收入与库存控制的贡献。此外，闭式体积规范将报价水平作为输入，适用于不同报价规则。 <div>
+We study market making with a parametric model of executed volume that accounts for quote placement and state-dependent order flow. Executed volume is expressed as the product of an average order size, an exponential demand function, and a Prony-series multiplier depending on quote depth, market-order count constructed from a state-dependent Hawkes model. An approximation result for finite Prony sums on a compact state domain provides a mathematical basis for the representation. An empirical study of limit-order-book data examines the calibrated demand and intensity models, sensitivity to inventory restrictions, and the resulting placement policies. In retrospective evaluations conditional on realised order-flow paths, the selected calibration achieves higher terminal utility than a baseline while respecting the prescribed inventory bound. The comparisons also distinguish the contribution of trading revenues from that of inventory control. The resulting closed-form volume specification takes placement levels as inputs and can therefore be used with alternative quoting rules.
+
+arXiv categories: q-fin.TR, q-fin.CP, q-fin.MF
+]]></content:encoded>
+<pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
+<pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
+</item>
 
 <item>
 <title>Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana</title>

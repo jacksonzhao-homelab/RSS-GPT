@@ -54,3 +54,24 @@ Existing_entries: 14
 Fetching from file://docs/arxiv-qfin-tr-raw.xml
 append_entries: 0
 Finish: 2026-11-01 16:45:01.164777
+------------------------------------------------------
+Started: 2026-11-01 16:56:27.098415
+Existing_entries: 9
+Fetching from file://docs/arxiv-qfin-tr-raw.xml
+Token length: 1378
+Summarized using glm-4.7-flash
+Append: [FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading](https://arxiv.org/abs/2610.36083)
+Token length: 1657
+Summarized using glm-4.7-flash
+Append: [Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain](https://arxiv.org/abs/2610.35738)
+Token length: 705
+Summarized using glm-4.7-flash
+Append: [Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book](https://arxiv.org/abs/2610.34787)
+Token length: 1388
+Summarized using glm-4.7-flash
+Append: [Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality](https://arxiv.org/abs/2610.33400)
+Token length: 1139
+Summarized using glm-4.7-flash
+Append: [Optimal Size in Market Making under State-Dependent Hawkes Process](https://arxiv.org/abs/2610.31903)
+append_entries: 5
+Finish: 2026-11-01 17:00:57.082602

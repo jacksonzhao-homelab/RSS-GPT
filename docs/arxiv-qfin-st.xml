@@ -4,17 +4,17 @@
 <title>arXiv q-fin.ST（近 10 天提交）</title>
 <link>https://arxiv.org/list/q-fin.ST/recent</link>
 
+
 <item>
 <title>Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book</title>
 <link>https://arxiv.org/abs/2610.34787</link>
 <guid>https://arxiv.org/abs/2610.34787</guid>
 <content:encoded><![CDATA[
-<div> 价格聚类, 限价订单簿, Tick网格框架, 深度调整持续时间, 流动性<br><br>总结:文章利用Tick网格框架分析限价订单簿数据，探讨了价格聚集现象。<br>1. 研究发现圆整水平确实吸引更多流动性。<br>2. 但深度调整持续时间在圆整水平并无显著差异。<br>3. Intel和SoFi显示出方向性效应，价格倾向于离开圆整水平。 <div>
+<div> 价格聚类, 限价订单簿, Tick网格框架, 深度调整持续时间, 流动性<br /><br />总结:文章利用Tick网格框架分析限价订单簿数据，探讨了价格聚集现象。<br />1. 研究发现圆整水平确实吸引更多流动性。<br />2. 但深度调整持续时间在圆整水平并无显著差异。<br />3. Intel和SoFi显示出方向性效应，价格倾向于离开圆整水平。 <div>
 Prices cluster at round numbers, a pattern often interpreted as evidence that these levels act as price barriers. This pattern also admits a mechanical explanation: more liquidity rests there, and prices take longer to leave deeper queues. Limit order book data allow us to distinguish these mechanisms through a tick-grid framework in which local time counts departures and level-wise volatility reflects the departure hazard. Using data for five Nasdaq stocks throughout 2025, we find that round levels attract more liquidity but do not exhibit longer depth-adjusted durations. Intel and SoFi show directional effects, with departures biased away from round levels.
 
 arXiv categories: q-fin.TR, q-fin.ST
 ]]></content:encoded>
-<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
 <pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
 </item>
 <item>
@@ -23,15 +23,13 @@ arXiv categories: q-fin.TR, q-fin.ST
 <guid>https://arxiv.org/abs/2610.33438</guid>
 <content:encoded><![CDATA[
 <div> 隐含波动率, 有限总体抽样, LSTM, 非平稳性, 预测能力
-<br><br>总结: 本文基于2018-2025年NVDA数据，研究IV曲面与风险预测。一是IV曲面重建中，基于滞后离散度的分层插值优于PPS；二是LSTM训练中，PPS和Neyman设计比SRS保留更多尾部窗口，虽节省时间但增量收益不明显；三是短期价格不可预测，远期IV仅具均值回归技能且未胜过HAR-IV；四是在价格大幅扩张期间，滚动量和美元时钟稳定了条形率并压缩了日内回报峰度。 <div>
+<br /><br />总结: 本文基于2018-2025年NVDA数据，研究IV曲面与风险预测。一是IV曲面重建中，基于滞后离散度的分层插值优于PPS；二是LSTM训练中，PPS和Neyman设计比SRS保留更多尾部窗口，虽节省时间但增量收益不明显；三是短期价格不可预测，远期IV仅具均值回归技能且未胜过HAR-IV；四是在价格大幅扩张期间，滚动量和美元时钟稳定了条形率并压缩了日内回报峰度。 <div>
 Compiling implied volatility (IV) surfaces and forecasting derivative risk from high-frequency equity and options feeds requires addressing contract heterogeneity, schema shifts, volatility clustering, and non-stationary trading activity. Using a split-adjusted NVIDIA (NVDA) equity and options panel (2018-2025), this study integrates finite-population survey sampling, tempered inverse-probability sequence learning, and causal activity clocks. Four findings emerge. First, cross-sectional surface accuracy depends on matching the sampling design to the target functional: plug-in stratified allocations using lagged cell dispersion improve equal-weighted surface reconstruction with full grid coverage, whereas liquidity-weighted probability proportional to size (PPS) sampling excels on liquidity-weighted targets by construction yet inflates error when misapplied. Second, in longitudinal LSTM sequence training, PPS and Neyman designs retain more tail-volatility windows than simple random sampling (SRS); all three designs are equivalent to full-census training within chosen margins while cutting training time, though incremental forecasting gains of informative selection over SRS are not established. Third, out-of-sample evaluation shows a predictability contrast: short-horizon prices are not forecastable beyond a random walk with drift among tested models, whereas forward IV shows descriptive mean-reversion skill concentrated in a few post-shock reversal sessions (insignificant under session-clustered tests), with sequence models not beating a linear HAR-IV benchmark and feature pruning driving stability. Fourth, across a 6.3x start-to-end (nearly twentyfold trough-to-peak) price expansion, rolling volume and dollar clocks stabilize bar rates and compress intraday return kurtosis beyond diurnal scaling.
 
 arXiv categories: stat.AP, q-fin.ST
 ]]></content:encoded>
 <pubDate>Sat, 24 Oct 2026 04:27:14 +0000</pubDate>
-<pubDate>Sat, 24 Oct 2026 04:27:14 +0000</pubDate>
 </item>
-
 <item>
 <title>Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns</title>
 <link>https://arxiv.org/abs/2610.39205</link>

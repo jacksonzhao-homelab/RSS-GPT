@@ -78,3 +78,15 @@ Existing_entries: 14
 Fetching from file://docs/arxiv-qfin-pm-raw.xml
 append_entries: 0
 Finish: 2026-11-01 16:45:00.348418
+------------------------------------------------------
+Started: 2026-11-01 16:54:50.372001
+Existing_entries: 12
+Fetching from file://docs/arxiv-qfin-pm-raw.xml
+Token length: 1618
+Summarized using glm-4.7-flash
+Append: [Optimal collective investment under regulatory uncertainty](https://arxiv.org/abs/2610.32959)
+Token length: 1517
+Summarized using glm-4.7-flash
+Append: [Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading](https://arxiv.org/abs/2610.32237)
+append_entries: 2
+Finish: 2026-11-01 16:56:26.311224
