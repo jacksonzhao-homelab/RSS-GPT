@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import re
 import datetime
 import requests
+import time
 from fake_useragent import UserAgent
 #from dateutil.parser import parse
 
@@ -212,11 +213,25 @@ def gpt_summary(query,model,language):
             http_client=httpx.Client(proxy=OPENAI_PROXY),
             # example:"http://my.test.proxy.example.com",
         )
-    completion = client.chat.completions.create(
-        model=model,
-        messages=messages,
-    )
-    return completion.choices[0].message.content
+    # 智谱等国内端点在高并发下会返回 429（code 1305 该模型当前访问量过大），
+    # 单次失败会让该条目退化成原文直出（无中文摘要），所以这里做指数退避重试。
+    last_err = None
+    for attempt in range(1, 5):
+        try:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=messages,
+            )
+            return completion.choices[0].message.content
+        except Exception as e:  # noqa: BLE001 - 网络层/限流都重试
+            last_err = e
+            msg = str(e)
+            retryable = any(k in msg for k in ("429", "502", "503", "504", "timeout", "Timeout",
+                                               "Connection", "1305"))
+            if attempt >= 4 or not retryable:
+                raise
+            time.sleep(4 * attempt)   # 4s, 8s, 12s
+    raise last_err
 
 def output(sec, language):
     """ output

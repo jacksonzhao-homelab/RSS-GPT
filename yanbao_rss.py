@@ -65,7 +65,10 @@ def fetch_abstract(code, timeout=20, limit=1500):
     i = body.find('class="ctx-content"')
     if i < 0:
         return ""
-    seg = body[i:i + 20000]
+    start = body.find(">", i)          # 从开标签的 '>' 之后开始，别把 class 属性当正文
+    if start < 0:
+        return ""
+    seg = body[start + 1:start + 20000]
     j = seg.find("</div>")
     text = _TAG.sub(" ", seg[:j] if j > 0 else seg)
     text = html.unescape(re.sub(r"\s+", " ", text)).strip()
