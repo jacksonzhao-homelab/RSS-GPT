@@ -5,13 +5,103 @@
 <link>https://arxiv.org/list/q-fin.TR/recent</link>
 
 <item>
+<title>Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found</title>
+<link>https://arxiv.org/abs/2611.06607</link>
+<guid>https://arxiv.org/abs/2611.06607</guid>
+<content:encoded><![CDATA[
+<div> 自主量化研究员、代理研究循环、过拟合、回测验证、严格评估标准
+
+<br><br>总结: 传统的 LLM 研究循环在量化交易中易产生伪发现。本文提出“自主量化研究员”框架：LLM 提出严格 JSON 声明，无权编写代码。评估基于不可变时序数据，需通过多重绝对标准（如成本生存、Bootstrap 下界）。系统在多种数据集上测试，多数假设失败。一个策略虽通过发现和验证（夏普比率 3），但在最终保留数据上失效（降至 0.26）。该循环的价值在于能拒绝报告虚假结果。 <div>
+Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that "improves the metric" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We describe Autonomous Quant Researcher, an open-source loop built on the opposite premise: the model proposes, and only trusted code decides. Proposals are strict declarative JSON over a fixed vocabulary, so there is no model-written code to sandbox. Evaluation runs on immutable chronological stores split into discovery, validation and a final holdout that can be opened exactly once, after a durable receipt is written. Acceptance is a conjunction of absolute gates (positive edge and net P&amp;L after costs, a positive weekly-cluster bootstrap lower bound, survival at elevated costs, per-year stability and sample floors), never a single score. Duplicates are refused before they spend a trial, and every formulation, refusal, crash and result is kept in a hash-chained, append-only ledger. We report every campaign run to date, across 0DTE options priced from traded option bars, overnight SPX verticals, daily ETF rules, technical-analysis premises, Kalshi crypto binaries, earnings options, off-exchange volume and a pre-registered alternative-data campaign. Most hypotheses fail, and we report them. Two results survive their pre-registered bars. The clearest example of the loop working is a failure: a language-model survivor that passed discovery and validation with Sharpe ratios near 3 and fell to 0.26 on its single holdout use. The value of such a loop lies less in what it finds than in how hard it is to make it report something that is not there.
+
+arXiv categories: q-fin.CP, q-fin.TR
+]]></content:encoded>
+<pubDate>Wed, 04 Nov 2026 14:57:39 +0000</pubDate>
+<pubDate>Wed, 04 Nov 2026 14:57:39 +0000</pubDate>
+</item>
+<item>
+<title>Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction</title>
+<link>https://arxiv.org/abs/2611.05218</link>
+<guid>https://arxiv.org/abs/2611.05218</guid>
+<content:encoded><![CDATA[
+<div> Hyperliquid, Level-4记录, 钱包身份, 回报预测, 高频交易<br><br>总结: 研究利用Hyperliquid Level-4记录重建深度订单簿，分析匿名钱包身份。基于2026年7月数据，发现名义加权排名在相邻窗口间保持稳定。钱包身份特征显著提升短期回报预测精度，调整后最高分位回报达3.11基点。在高频模型中，引入相关特征使1秒预测的R2从10.88%提升至12%。 <div>
+Conventional public order-book data summarize trading without identifying the accounts behind it. Hyperliquid's Level-4 record also exposes persistent pseudonymous wallet addresses. We reconstruct full-depth books from consensus-ordered messages and evaluate wallet identity as a feature for short-horizon return prediction. The July 1-27, 2026 record covers 17.1 billion messages, 14.3 million aggressive orders by 147,113 wallets, and $84.3 billion in taker notional across ten markets. In the three model markets, notional-weighted ten-second markout rankings persist across adjacent ten-day windows (Spearman rho = 0.52); covariate-adjusted validation markouts reach 3.11 basis points in the top ventile. On a 100-millisecond grid, eleven features describing previously scored top-decile wallets raise one-second out-of-sample R2 from 10.88% to 12.
+
+arXiv categories: q-fin.TR, q-fin.ST
+]]></content:encoded>
+<pubDate>Tue, 03 Nov 2026 17:03:36 +0000</pubDate>
+<pubDate>Tue, 03 Nov 2026 17:03:36 +0000</pubDate>
+</item>
+<item>
+<title>Learning AI Agents, Market Makers, and Stress in Automated Markets</title>
+<link>https://arxiv.org/abs/2611.01799</link>
+<guid>https://arxiv.org/abs/2611.01799</guid>
+<content:encoded><![CDATA[
+<div> 交易代理, 自动做市商, 羊群效应, 市场压力, 做市商定价
+
+<br><br>总结: 本文研究AI交易代理在自动做市商(AMM)中的行为。羊群型与套利型市场回报相似，但压力持续时间受反馈噪声比 $\beta/s$ 影响巨大。识别反馈符号需 $\Theta((s/\beta)^2 \log(1/\delta))$ 次观测。代理协同时逐利者追随羊群导致全有或全无参与。赚取价差的做市商恢复稳定性但使流动性脆弱，引发不连续崩溃和磁滞；做市商-吃单定价是有效工具。 <div>
+Automated markets increasingly route order flow from learning trading agents through automated market makers (AMMs). We model trader archetypes as AI agents defined by their reward functions and analyze the feedback they create on a constant-product AMM. Herd-dominated and arbitrage-dominated markets of equal size have identical return distributions and turnover, so no rule based on volatility, value-at-risk, stress frequency, or volume can tell them apart; yet their stress episodes differ in length by a factor unbounded in the feedback-to-noise ratio $β/s$. Serial statistics identify the feedback sign from $Θ((s/β)^2\log(1/δ))$ observations, and this rate is tight. When agents trade together, profit-seeking agents ride herds rather than lean against them, leading to all-or-nothing participation. Spread-earning market makers restore stability but make liquidity fragile, with discontinuous collapse and hysteresis; maker--taker pricing, not a uniform fee, is the effective instrument.
+
+arXiv categories: econ.EM, cs.LG, econ.TH, q-fin.TR
+]]></content:encoded>
+<pubDate>Sun, 01 Nov 2026 11:08:08 +0000</pubDate>
+<pubDate>Sun, 01 Nov 2026 11:08:08 +0000</pubDate>
+</item>
+<item>
+<title>AIDA: An AI Outage Registry with Evidence from On-Chain MEV</title>
+<link>https://arxiv.org/abs/2611.01656</link>
+<guid>https://arxiv.org/abs/2611.01656</guid>
+<content:encoded><![CDATA[
+<div> 生成式AI, AIDA, MEV, 交易软件, 中断<br><br>总结: 研究发现生成式AI降低了交易软件成本，引入AIDA记录了AI中断事件。低成本代码降低了MEV准入门槛，套利者和清算者增加，但执行仍集中。AI中断会阻碍新代码发布，但已部署的机器人继续运行。尽管代码更便宜，私有的订单流、延迟和资本仍是成功的关键。 <div>
+Generative AI coding tools have lowered the cost of writing trading software, but no systematic dataset records when these services fail. We introduce the AI Incident and Disruption Archive (AIDA), a multi-vendor registry of 5,868 deduplicated outage incidents across 30 providers from 2025 to 2026, with foundation-model incidents verified against primary status-page or postmortem URLs. Pairing AIDA with 5,041,034 verified maximal extractable value (MEV) transactions by 8,516 Ethereum addresses, their contract creations, and a 22-month Base Layer-2 panel of 1,099,593,191 swaps and 29,120 private executors, we establish two findings. First, entry into MEV expanded where code and public state suffice, as active arbitrage addresses quadrupled from late 2024 to late 2026 and liquidators grew by a third, while sandwich attackers, who need private order flow and builder access, declined. Execution nonetheless remained concentrated, with the top fifty addresses executing two thirds of verified trades. Second, AI outages stall new trading code while deployed bots keep trading. On Ethereum, addresses releasing a private executor fall to 0.67 on the day of an eight-hour disruption (0.68 for executor creations during OpenAI outage hours) and to 0.66 at lag two before rebounding on day three; on Base, operator top-level creations fall to 0.76 during OpenAI hours and executor-deploying operators to 0.88 at lag two. Non-trading creations, automated factory clones, and live arbitrage and sandwich execution across both chains remain unchanged. Cheaper code thus lowers the barrier to building MEV contracts, while private order flow, latency and capital still determine who wins execution.
+
+arXiv categories: q-fin.TR, cs.CE
+]]></content:encoded>
+<pubDate>Sun, 01 Nov 2026 07:05:25 +0000</pubDate>
+<pubDate>Sun, 01 Nov 2026 07:05:25 +0000</pubDate>
+</item>
+<item>
+<title>Non-Convex Market Makers: Coherence without Convexity, Friction, and Parallel Composition</title>
+<link>https://arxiv.org/abs/2611.00502</link>
+<guid>https://arxiv.org/abs/2611.00502</guid>
+<content:encoded><![CDATA[
+<div> 成本函数做市商 无套利条件 非凸性 下确界卷积 去中心化预言机
+<br><br>总结: 成本函数做市商的凸性并非相干性的必要条件，无套利条件表现为弦条件。非凸做市商通过费用恢复相干性，组合做市商由下确界卷积解决。套利者对非相干配置定价，充当去中心化预言机。相干性取决于摩擦和寻找凭证的成本。 <div>
+Cost-function market makers are always assumed convex, and convexity is not what makes them coherent. For a path-independent maker the exact no-arbitrage condition is a chord condition, that every chord slope of the cost lie in the convex hull of payoffs; convexity enters the standard axiomatics through a separate requirement, monotone information incorporation, and dropping it leaves coherent non-convex makers. Rational flow against such a maker trades the convex envelope, so non-convexity costs expressiveness rather than soundness, and a proportional fee of at least the arbitrage depth restores no-arbitrage, which by conjugation is a bid-ask spread with an exact no-trade interval for any cost whatever. Combining fee-bearing makers is an infimal convolution solved by one monotone clearing-price root-find, with sparse participation and a consolidated limit order book as the aggregate, and a deep quadratic co-quoter is Moreau smoothing, which preserves coherence at every depth. Any quoted configuration outside the coherent hull admits a portfolio priced below its worst payoff, so arbitrageurs act as decentralized separation oracles, and coherence is relative to friction and to the cost of finding certificates.
+
+arXiv categories: q-fin.MF, q-fin.TR
+]]></content:encoded>
+<pubDate>Sat, 31 Oct 2026 00:48:35 +0000</pubDate>
+<pubDate>Sat, 31 Oct 2026 00:48:35 +0000</pubDate>
+</item>
+<item>
+<title>Reading the Count: Prediction Markets and Brazil's 2026 Presidential Election</title>
+<link>https://arxiv.org/abs/2611.00338</link>
+<guid>https://arxiv.org/abs/2611.00338</guid>
+<content:encoded><![CDATA[
+<div> 巴西总统选举, 投票预测, Kalshi市场, 投影误差, 投票暂停
+<br><br>总结:
+1. 文本重建了巴西总统选举的逐区投票记录，并与Kalshi和Polymarket预测进行对比。
+2. 市场标准差比逐区重建大4倍，比2018年重建大2倍。
+3. 暂停期间市场概率低于事后重建数据；第一轮市场比重建快。
+4. 投票恢复后买入获胜者合约预期利润为4至18美分。
+5. 市场在实时准确性上存在显著误差。 <div>
+We rebuild the public count of Brazil's 2026 presidential runoff minute by minute from the electoral court's section-level records and compare it with every trade on Kalshi and Polymarket. A projection published live on the night gave the eventual winner, Lula, a probability of 0.998 from 19:15, with 1.6% of sections counted. The markets reached 0.9 at 20:24, with 46% counted. Read as the projection's central estimate with a wider uncertainty, their prices imply a standard deviation of the final margin about four times the live projection's, and about twice that of a section-level projection calibrated on the 2018 runoff, the earlier night with the largest errors. Valued at these projections, takers' purchases of Lula after the count resumed had an expected profit of 4 to 18 cents per Kalshi contract after fees; valued at a state-level extrapolation of the count, it was zero. During a two-hour suspension of the count the markets gave Lula 0.25 to 0.44, below every reading we compute afterwards from the sections then public, none of which was available live. On the first-round night, when the headline count showed the eventual leader ahead from its first file, the same markets were faster than our projection.
+
+arXiv categories: q-fin.TR, econ.EM
+]]></content:encoded>
+<pubDate>Fri, 30 Oct 2026 20:13:18 +0000</pubDate>
+<pubDate>Fri, 30 Oct 2026 20:13:18 +0000</pubDate>
+</item>
+
+<item>
 <title>FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading</title>
 <link>https://arxiv.org/abs/2610.36083</link>
 <guid>https://arxiv.org/abs/2610.36083</guid>
 <content:encoded><![CDATA[
 <div> FinLLM-KG, 金融情感分析, 知识图谱, 因果LLM, 可解释性
 
-<br><br>总结:
+<br /><br />总结:
 针对现有金融情感分析局限于孤立文章、缺乏语境及黑盒不可解释的问题。
 提出FinLLM-KG框架，结合因果LLM与金融知识图谱，利用SEC 10-K文件注入公司级知识。
 该方法无需更新权重，支持自然语言或三元组输入，在零计算成本下提升语境理解与投资组合表现。
@@ -21,7 +111,6 @@ Recent advances in Generative AI have substantially improved financial sentiment
 arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
 ]]></content:encoded>
 <pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
-<pubDate>Mon, 26 Oct 2026 18:08:20 +0000</pubDate>
 </item>
 <item>
 <title>Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain</title>
@@ -30,13 +119,12 @@ arXiv categories: cs.CL, cs.LG, q-fin.ST, q-fin.TR
 <content:encoded><![CDATA[
 <div> 区块链, 突发需求, Gas 费用, 外部触发级联, 模仿行为
 
-<br><br>
+<br /><br />
 总结: 1. 分析了 Robinhood Chain 上前三个月超过 5000 万次 Uniswap 交换数据。 2. 突发期间交易量与平静期相当但更频繁，峰值是中位值的 2.5 倍，呈双指数衰减。 3. 相比平静期，突发涉及更多发件人和交易。 4. 外部触发级联模型比自激模型拟合更好。 5. 突发期间存在约 24 秒的模仿行为延迟。 <div>
 Demand on blockchain-based marketplaces arrives in bursts and at a high rate. On these platforms the data are completely visible, which makes it feasible to compare the bursty demand against the usual load. The congestion manifests as an increased demand for gas, the primary resource a blockchain sells. Existing studies consider how to price the gas. The demand itself, and what it is made of during bursts, has not been measured. We measure it on Robinhood Chain, a layer-2 blockchain that quickly became a venue for trading tokenized equities and memecoins. We collected the data from every block of its first three active months and more than 50 million Uniswap swaps that occurred during bursty periods. We find that a burst trades about as many pools as a quiet period, mostly different ones, and trades them harder, on top of elevated demand that accumulated for hours. With the bursts aligned on their peaks, the median peak is 2.5 times the usual load. Both the rise and the fall of the demand are described by the sum of two exponential functions with different timescales, a slow one of hours and a fast one of minutes. Against a matched quiet period, a burst has 1.05 times the pools, 1.40 times the trades, and 1.21 times the senders. We use two models to explain the arrival of bursts: externally triggered cascades and self-excitation. The former fits the data relatively better. Inside a burst, the entry of each trader into a pool is followed for about 24 seconds by more entries than the existing traders predict. Whether this is because of imitation or because of a shared signal is left open.
 
 arXiv categories: econ.EM, cs.SI, q-fin.TR
 ]]></content:encoded>
-<pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
 <pubDate>Mon, 26 Oct 2026 16:55:17 +0000</pubDate>
 </item>
 <item>
@@ -45,7 +133,7 @@ arXiv categories: econ.EM, cs.SI, q-fin.TR
 <guid>https://arxiv.org/abs/2610.34787</guid>
 <content:encoded><![CDATA[
 <div> 价格簇, 流动性, Tick-grid, 限价订单簿, 深度调整
-<br><br>总结:
+<br /><br />总结:
 1. 文章利用Tick-grid框架和限价订单簿数据，区分了价格簇背后的流动性吸引与停留时间延长机制。
 2. 研究发现圆整水平虽然吸引了更多流动性，但深度调整后的停留时间并未显著延长。
 3. 具体分析表明，英特尔和SoFi等股票存在价格倾向于远离圆整水平的方向性偏差。 <div>
@@ -54,7 +142,6 @@ Prices cluster at round numbers, a pattern often interpreted as evidence that th
 arXiv categories: q-fin.TR, q-fin.ST
 ]]></content:encoded>
 <pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
-<pubDate>Mon, 26 Oct 2026 03:31:11 +0000</pubDate>
 </item>
 <item>
 <title>Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality</title>
@@ -62,7 +149,7 @@ arXiv categories: q-fin.TR, q-fin.ST
 <guid>https://arxiv.org/abs/2610.33400</guid>
 <content:encoded><![CDATA[
 <div> 高频交易, 订单级代理指标, 活跃精确匹配订单, 延迟, 市场质量
-<br><br>总结:
+<br /><br />总结:
 1. 文章提出了一种基于精确订单放置的高频交易代理指标，称为活跃精确匹配订单。
 2. 利用深交所数据验证，该指标响应迅速、取消快、集中度高，并能预测回报。
 3. 通过利用开盘传播延迟差异发现，低延迟显著增加了此类订单。
@@ -73,7 +160,6 @@ We develop a new order-level proxy for high-frequency trading (HFT) activity bas
 arXiv categories: q-fin.TR
 ]]></content:encoded>
 <pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
-<pubDate>Sat, 24 Oct 2026 02:22:20 +0000</pubDate>
 </item>
 <item>
 <title>Optimal Size in Market Making under State-Dependent Hawkes Process</title>
@@ -81,15 +167,13 @@ arXiv categories: q-fin.TR
 <guid>https://arxiv.org/abs/2610.31903</guid>
 <content:encoded><![CDATA[
 <div> 市场做市, 执行量, Hawkes模型, Prony级数, 限价订单簿
-<br><br>总结: 本文提出一种包含平均订单规模、指数需求函数及状态依赖Prony级数乘数的执行量参数模型，利用Hawkes模型构建市场订单计数。基于限价订单簿数据校准模型，利用紧致状态域上的近似结果作为数学基础。实证显示，该模型在满足库存约束下比基线具有更高效用，有效区分了交易收入与库存控制的贡献。此外，闭式体积规范将报价水平作为输入，适用于不同报价规则。 <div>
+<br /><br />总结: 本文提出一种包含平均订单规模、指数需求函数及状态依赖Prony级数乘数的执行量参数模型，利用Hawkes模型构建市场订单计数。基于限价订单簿数据校准模型，利用紧致状态域上的近似结果作为数学基础。实证显示，该模型在满足库存约束下比基线具有更高效用，有效区分了交易收入与库存控制的贡献。此外，闭式体积规范将报价水平作为输入，适用于不同报价规则。 <div>
 We study market making with a parametric model of executed volume that accounts for quote placement and state-dependent order flow. Executed volume is expressed as the product of an average order size, an exponential demand function, and a Prony-series multiplier depending on quote depth, market-order count constructed from a state-dependent Hawkes model. An approximation result for finite Prony sums on a compact state domain provides a mathematical basis for the representation. An empirical study of limit-order-book data examines the calibrated demand and intensity models, sensitivity to inventory restrictions, and the resulting placement policies. In retrospective evaluations conditional on realised order-flow paths, the selected calibration achieves higher terminal utility than a baseline while respecting the prescribed inventory bound. The comparisons also distinguish the contribution of trading revenues from that of inventory control. The resulting closed-form volume specification takes placement levels as inputs and can therefore be used with alternative quoting rules.
 
 arXiv categories: q-fin.TR, q-fin.CP, q-fin.MF
 ]]></content:encoded>
 <pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
-<pubDate>Thu, 22 Oct 2026 20:59:01 +0000</pubDate>
 </item>
-
 <item>
 <title>Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana</title>
 <link>https://arxiv.org/abs/2610.39458</link>

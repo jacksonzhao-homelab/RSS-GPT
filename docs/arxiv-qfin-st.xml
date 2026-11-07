@@ -4,6 +4,209 @@
 <title>arXiv q-fin.ST（近 10 天提交）</title>
 <link>https://arxiv.org/list/q-fin.ST/recent</link>
 
+<item>
+<title>Neural Realized Measures: Forecast-Supervised Intraday Aggregation for Volatility Forecasting</title>
+<link>https://arxiv.org/abs/2611.07287</link>
+<guid>https://arxiv.org/abs/2611.07287</guid>
+<content:encoded><![CDATA[
+<div> 高频波动率预测, 神经实现测度, 预测监督聚合, 实现测度, 加密货币
+
+<br><br>总结:
+文章提出Neural Realized Measures (NRM)框架，通过预测目标监督学习聚合权重，替代传统固定规则。该方法保留了原始测度贡献及逐条目归因能力，且包含传统方法作为特例。在Heston模拟和加密货币数据的评估中，NRM在多种模型下均降低了RMSE和QLIKE。分析显示学习到的权重具有系统性的时间效应和非线性上下文特征。 <div>
+High-frequency volatility forecasting typically separates measurement from prediction: intraday observations are first compressed into a daily realized measure using a fixed aggregation rule, and the resulting statistic is then passed to a forecasting model. This conventional pipeline therefore treats measure construction as forecast-agnostic preprocessing. We ask whether the aggregation stage itself can instead be learned from the downstream forecasting objective while preserving the statistical structure of established realized measures. We propose Neural Realized Measures (NRM), a primitive-preserving, forecast-supervised aggregation framework that retains the original measure-specific intraday contributions but replaces uniform aggregation with positive, mean-normalized context-dependent weights. Uniform weights exactly recover the corresponding raw realized measure (RRM), so the classical construction is nested as a special case. Because NRM remains an explicit weighted sum of established primitive contributions, it also retains direct bar-level attribution. Across SF, HAR, and MIDAS forecasting specifications, NRM is evaluated against corresponding RRM specifications under controlled comparisons. In Heston simulations, NRM reduces RMSE for both contemporaneous and next-day latent integrated variance across all evaluated primitive--regime combinations. On six cryptocurrencies using five-minute data, NRM improves QLIKE in all 54 paired out-of-sample comparisons, with mean gains of 7.23\%, 8.15\%, and 9.22\% under SF, HAR, and MIDAS, respectively. Validation-selected NRM specifications also achieve the lowest mean QLIKE across the six assets among the evaluated approaches. Ablation and SHAP analyses reveal systematic time-of-day and nonlinear local-context effects in the learned allocation.
+
+arXiv categories: q-fin.ST, stat.ML
+]]></content:encoded>
+<pubDate>Thu, 05 Nov 2026 01:10:44 +0000</pubDate>
+<pubDate>Thu, 05 Nov 2026 01:10:44 +0000</pubDate>
+</item>
+<item>
+<title>A general technique for explicit quantile representations</title>
+<link>https://arxiv.org/abs/2611.06459</link>
+<guid>https://arxiv.org/abs/2611.06459</guid>
+<content:encoded><![CDATA[
+<div> 分位数积分 解析密度 独立性 Black-Scholes隐含波动率 区间表示
+<br><br>总结: 本文证明了严格正实解析密度的分位数积分存在独立于概率水平的轮廓。文章提供了明确的构造方法，覆盖了五个广泛的分布族。最终，利用前向函数得出了Black-Scholes隐含波动率的有限区间表示。 <div>
+This work proves existence of contours independent of probability level for exact quantile integrals of strictly positive real-analytic densities. Explicit constructions cover five broad distribution families and yield a finite-interval representation of Black-Scholes implied volatility using forward functions.
+
+arXiv categories: q-fin.ST, math.PR
+]]></content:encoded>
+<pubDate>Wed, 04 Nov 2026 12:56:31 +0000</pubDate>
+<pubDate>Wed, 04 Nov 2026 12:56:31 +0000</pubDate>
+</item>
+<item>
+<title>Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction</title>
+<link>https://arxiv.org/abs/2611.05218</link>
+<guid>https://arxiv.org/abs/2611.05218</guid>
+<content:encoded><![CDATA[
+<div> Hyperliquid, Level-4, 钱包身份, 回报预测, 高频交易特征
+
+<br><br>总结: 本文利用Hyperliquid Level-4数据（含钱包身份）重构全深度订单簿，进行短期回报预测。研究发现，基于名义交易量的排名在相邻窗口间保持稳定。通过将钱包身份作为特征，在调整协变量后，预测收益在顶部十分位达到3.11个基点。此外，利用顶级交易者的特征将1秒期外R2从10.88%提升至12%。 <div>
+Conventional public order-book data summarize trading without identifying the accounts behind it. Hyperliquid's Level-4 record also exposes persistent pseudonymous wallet addresses. We reconstruct full-depth books from consensus-ordered messages and evaluate wallet identity as a feature for short-horizon return prediction. The July 1-27, 2026 record covers 17.1 billion messages, 14.3 million aggressive orders by 147,113 wallets, and $84.3 billion in taker notional across ten markets. In the three model markets, notional-weighted ten-second markout rankings persist across adjacent ten-day windows (Spearman rho = 0.52); covariate-adjusted validation markouts reach 3.11 basis points in the top ventile. On a 100-millisecond grid, eleven features describing previously scored top-decile wallets raise one-second out-of-sample R2 from 10.88% to 12.
+
+arXiv categories: q-fin.TR, q-fin.ST
+]]></content:encoded>
+<pubDate>Tue, 03 Nov 2026 17:03:36 +0000</pubDate>
+<pubDate>Tue, 03 Nov 2026 17:03:36 +0000</pubDate>
+</item>
+<item>
+<title>Aggregate Calibration Can Mask Stress-State Undercoverage: Bounded-Memory Forecast Intervals under Recurrent Financial Stress</title>
+<link>https://arxiv.org/abs/2611.04223</link>
+<guid>https://arxiv.org/abs/2611.04223</guid>
+<content:encoded><![CDATA[
+<div> 序列预测区间, 校准记忆限制, 高波动状态, 金融范围预测, 近期优先<br><br>总结: 1. **问题识别**：序列预测区间仅靠聚合覆盖率评估会受限于校准记忆，导致在经济重要状态复发后出现误导。<br>2. **实验设置**：在次日金融范围预测中，保持模型和预算不变，对比了近期优先（FIFO）、无界状态历史和罕见重放三种方法。<br>3. **实证结果**：近期优先校准虽整体达标，但在高波动状态期间严重覆盖不足；罕见重放方法在高VIX区间表现更优。<br>4. **核心结论**：有界校准记忆属于预测信息设计，仅凭聚合校准指标无法发现特定状态下的可靠性失败。 <div>
+Sequential forecast intervals are often evaluated by aggregate coverage even when calibration memory is bounded. This can be misleading when economically important states recur after long absences: a recent-only buffer may satisfy its overall coverage target while no longer containing errors from earlier episodes of the returning state. We study this problem in next-day financial range forecasting, holding the forecasting model, conformity score, adaptive update, and memory budget constant while varying the historical residual information available at each query. Recent-only first-in, first-out (FIFO) calibration is near nominal in aggregate but undercovers substantially during high-volatility states in both an exchange-traded fund development panel and a fixed stock panel. An unbounded state-history reference yields a lower observed stress-period interval score; Rare replay yields lower high-VIX interval scores than the matched Recent-n and Hybrid-n controls in both panels, and the state-structured versus recent-only contrast is largest near stress re-entry. Bounded calibration memory is therefore part of the forecasting information design, and aggregate calibration alone can conceal state-specific reliability failures.
+
+arXiv categories: stat.ME, q-fin.ST
+]]></content:encoded>
+<pubDate>Tue, 03 Nov 2026 03:04:15 +0000</pubDate>
+<pubDate>Tue, 03 Nov 2026 03:04:15 +0000</pubDate>
+</item>
+<item>
+<title>Decomposing Rank Reversals under Temporal Nonstationarity: Alignment, Aggressiveness, and Instability</title>
+<link>https://arxiv.org/abs/2611.04116</link>
+<guid>https://arxiv.org/abs/2611.04116</guid>
+<content:encoded><![CDATA[
+<div> 时间非平稳性、模型排名逆转、R方分解、记忆敏感度、自适应回溯<br><br>总结:<br>提出统一框架：针对时间非平稳性下模型排名逆转问题，建立统一理论框架。<br>将预测误差分解为对齐度、失准激进性和预测不稳定性。<br>理论推导：推导复杂度边界，给出局部漂移下岭回归的最优记忆方程。<br>机制验证：在金融数据上验证，证明排名逆转由激进性激增驱动。 <div>
+Under temporal nonstationarity, model performance rankings reverse across training horizons due to heterogeneous sensitivities to memory. While existing literature addresses adaptive lookbacks, effective model complexity, and empirical forecast evaluation in isolation, no unified framework explains the structural mechanics driving these rank reversals. We bridge this gap by deriving a model-agnostic decomposition of out-of-sample $R^2$ into target alignment, miscalibrated aggressiveness, and predictive instability. Within this framework, we mathematically characterize complexity phase boundaries, establish closed-form optimal-memory equations for ridge regression under local drift, and extend these guarantees to complex model architectures via surrogate bounds. We validate these theoretical dynamics by benchmarking 14 linear, tree-based, and neural architectures across large-scale financial panels. In doing so, our framework demonstrates that empirical model rank reversals are driven by predictable surges in miscalibrated aggressiveness, providing a rigorous mechanistic diagnosis of generalization under temporal shift.
+
+arXiv categories: cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Tue, 03 Nov 2026 00:46:03 +0000</pubDate>
+<pubDate>Tue, 03 Nov 2026 00:46:03 +0000</pubDate>
+</item>
+<item>
+<title>Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds</title>
+<link>https://arxiv.org/abs/2611.04070</link>
+<guid>https://arxiv.org/abs/2611.04070</guid>
+<content:encoded><![CDATA[
+
+Researchers ask large language model (LLM) research agents whether a forecasting model beats a static benchmark, a verdict that real data cannot check. We treat the agent as a statistical test and score pre-specified runs of three frontier models and one open-weight model in simulated worlds with a planted signal. The agents detect weak signals more often than a pre-specified out-of-sample test, mainly because they accept weaker evidence: held to an agent's false-positive rate, a conventional in-sample test does as well or better. The agents claim predictability too often in worlds without a signal, state miscalibrated probabilities, and change their verdicts after a sentence about prior research; the magnitudes depend on the model. The excess false claims persist in simulated worlds without a resampling artifact. Agent verdicts are informative but need a neutral brief, a decision rule fixed outside the agent and a sealed holdout.
+
+arXiv categories: q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 23:25:11 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 23:25:11 +0000</pubDate>
+</item>
+<item>
+<title>PanelGP: A Probabilistic Factor Model for Asset-Return Panels</title>
+<link>https://arxiv.org/abs/2611.04040</link>
+<guid>https://arxiv.org/abs/2611.04040</guid>
+<content:encoded><![CDATA[
+<div> PanelGP, 高斯过程, 条件因子模型, 非参数估计, 股票回报
+<br><br>总结:
+1. 提出PanelGP，利用高斯过程非参数估计公司特征与经济条件对因子载荷及期望因子的影响。
+2. 通过稀疏变分推断分离异质与系统性风险，并预测回报和协方差矩阵。
+3. 相比IPCAs，非线性载荷能更好排名股票并提升预测准确度。
+4. 实证显示投资组合具有更高夏普比率和更低波动率。
+5. 但预测方差对风险的区分度不足，存在过度压缩现象。 <div>
+We develop PanelGP, a conditional factor model for large panels of stock returns in which firm characteristics determine the factor loadings and economic conditions determine the expected factors. Both relations are estimated nonparametrically with Gaussian-process priors. The kernel choice nests instrumented principal component analysis (IPCA) as well as smooth nonlinear maps. Asset-specific loading innovations and common factor innovations separate idiosyncratic from systematic risk, so one estimated model forecasts both expected returns and their covariance matrix. Estimation uses sparse variational inference with a joint posterior over loadings and factors. Because each predicted return is bilinear in a Gaussian state, the predictive covariance matrix and the cumulants of any portfolio have closed forms. In simulations, the estimator recovers the nonlinear maps and the variance parameters. For S&amp;P 500 constituents over 1995-2024, nonlinear loadings rank stocks better than affine loadings and improve the Gaussian log score. Relative to IPCA, the resulting portfolios have higher Sharpe ratios, also net of trading costs, and the minimum-variance portfolio has lower volatility. The predicted variances rank stocks and months by risk but are too compressed.
+
+arXiv categories: q-fin.ST, econ.EM, stat.ML
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 22:35:34 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 22:35:34 +0000</pubDate>
+</item>
+<item>
+<title>Thinking Fast, Trading Late: System One Decision Models vs the Market</title>
+<link>https://arxiv.org/abs/2611.03985</link>
+<guid>https://arxiv.org/abs/2611.03985</guid>
+<content:encoded><![CDATA[
+<div> 大语言模型, 股票预测, OLIVIA协议, 稳健性测试, 信息系数
+<br><br>总结:
+1. 大语言模型通过阅读新闻预测股票，但需严格测试排除过拟合。
+2. 提出OLIVIA协议，通过掩码身份和加密分析计划进行盲测。
+3. 实验显示，微调模型在盲测中信号减弱，商业模型仅能预测开盘价变动。
+4. 没有策略能盈利，且模型能识别被掩码的公司，表明市场先于模型知晓新闻。 <div>
+Large language models (LLMs) read company news at scale, and backtests suggest that their readings predict stock returns. We ask how much of that predictability survives a test that rules out look-ahead, memorization and selection. We propose OLIVIA, a protocol for such tests: point-in-time inputs with company identities masked, selection on validation data only, an analysis plan frozen by cryptographic hash, and a test period unblinded once through a logged lock. We apply it to AI decision models, non-generative language models that return probabilities for typed questions, reading news about S&amp;P 500 stocks: an open-weights model we fine-tuned on 2024-2025 data, three commercial models and standard baselines. The fine-tuned model's signal replicated on two validation quarters (daily information coefficients 0.055 and 0.065) but fell to 0.020 (t = 1.7) on the blinded January-July 2026 test. The commercial models' readings line up with the overnight move to the open (information coefficient 0.074 to 0.077) but not with the move after it, so the news is priced by the time a trader can act on it at the open. No model can tell over- from under-reaction, and no pre-registered strategy survives costs and a deflated Sharpe ratio. Commercial models identify masked companies in 62% to 74% of cases against a 28% baseline: masking hides names, not companies. The market reads the news first.
+
+arXiv categories: cs.AI, cs.CL, cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 21:24:49 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 21:24:49 +0000</pubDate>
+</item>
+<item>
+<title>Hardware-Aware Design and Layout Selection in Quantum Reservoir Computing for Insurance Claims Forecasting</title>
+<link>https://arxiv.org/abs/2611.03891</link>
+<guid>https://arxiv.org/abs/2611.03891</guid>
+<content:encoded><![CDATA[
+<div> 量子储备池计算, 保险索赔预测, 硬件感知布局, IBM Kingston, 转移鲁棒性
+<br><br>总结: 文章验证了小型量子储备池计算（QRC）在预测次日汽车保险索赔中的竞争力。通过基于硬件本原图和动力学筛选出五个候选模型，理想模拟中其RMSE与经典Ridge回归相当。在IBM Kingston处理器上，采用硬件感知布局显著优于Qiskit布局，避免了随机布局的严重失败，并将最大转移失真控制在7.59（Qiskit为11.84）。文章发现硬件感知布局能有效减少系统性预报偏移，结论是小型QRC能达到竞争性精度，且硬件感知布局能确保向硬件的稳定转移。 <div>
+Quantum reservoir computing (QRC) processes temporal information through quantum dynamics, but it remains unclear whether small QRC models can forecast real data competitively with classical models and whether their predictions survive the transfer from ideal simulation to noisy hardware. We address both questions for a six-qubit gate-based reservoir that forecasts next-day motor-insurance claim counts. Five reservoir candidates were selected and frozen using hardware-native interaction graphs, Trotterized Ising dynamics, memory and measurement-robustness criteria, circuit cost, and calibrated-noise screening. On 232 held-out test days, the ideal candidates reached root-mean-square errors (RMSEs) of 5.66-6.12 claims/day, compared with 5.36 for ridge regression. For four of the five, the difference from ridge was not significant under a 95% block bootstrap, and their accuracy was comparable with classical recurrent and reservoir baselines. On the 156-qubit IBM Kingston processor, we ran 63 evaluations in 21 paired rounds, comparing hardware-aware, random-native, and Qiskit optimization level 1 layouts. Hardware-aware placement gave lower RMSE than Qiskit in every round, with a maximum transfer distortion of 7.59 claims/day (11.84 for Qiskit), and avoided the severe transfer failures seen for some random layouts. Most of the hardware distortion appeared as a systematic forecast shift, which a short hardware probe on training inputs detected before the test runs. Longer replay windows raised circuit cost without a consistent gain in forecasting accuracy or hardware transfer. Small QRC models can thus reach competitive accuracy on this task, and hardware-aware layout selection makes their transfer to IBM Kingston more consistent.
+
+arXiv categories: quant-ph, cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 19:58:16 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 19:58:16 +0000</pubDate>
+</item>
+<item>
+<title>Can We Stop the Backtest Yet? Anytime-Valid Promotion Tests for Adaptive Financial Research Agents</title>
+<link>https://arxiv.org/abs/2611.03384</link>
+<guid>https://arxiv.org/abs/2611.03384</guid>
+<content:encoded><![CDATA[
+<div> PROMOTE协议 交易规则 财富分配 Ville论证 伪外样本回放<br><br>总结: 文章提出了 PROMOTE 协议，为候选交易规则分配可预测的测试财富，并仅从回报中积累成本感知的 e-process。基于加权 Ville 论证，该协议在总财富约束下限制了宣称净得分非正的规则被推广的概率，支持依赖性候选和自适应监控。实验表明，相比未调整测试，PROMOTE 在零假设路径上实现了零假阳性，且具备 70.1% 的目标功率。市场回放显示成本后无推广。需注意，该证书仅控制历史错误推广，不保证部署时的盈利能力。 <div>
+Financial research agents can generate and monitor trading rules faster than a human can document the resulting selection process. Candidates appear at data-dependent times, weak rules are abandoned, and promising ones are watched until they cross a reporting threshold. We introduce PROMOTE, a protocol that assigns every candidate predictable testing wealth at birth and accumulates a cost-aware e-process only from subsequent returns. If lifetime allocations sum to at most one, a weighted Ville argument bounds the probability of ever promoting a rule whose declared bounded net score has always had nonpositive conditional mean. The result permits dependent candidates, adaptive births, and indefinite monitoring. We audit the implementation in two settings. A retrospective pseudo-out-of-sample replay contains 24 panel--rule hypotheses, 3,000 shared-sign null paths, injected alternatives, and public ETF and industry data. Repeated unadjusted tests produce a family crossing in 94.5% of null paths, versus 0.0% for PROMOTE; at a 15-bp aligned ETF-component perturbation, PROMOTE has 70.1% target power and median crossing session 2,327. A separate exact mean-zero experiment lets an agent select candidate identities and birth times from past scores; the funded gate has 1.77% false-family crossings across 3,000 programs. The market replay produces zero promotions after costs. The certificate controls historical false promotion under the declared null; it is not a certificate that an earlier edge remains profitable at deployment. AI-use disclosure. Generative AI tools, including OpenAI Codex, assisted manuscript preparation. For this preprint version, Codex assisted with LaTeX editing, author and venue metadata, compilation, and layout checks.
+
+arXiv categories: cs.AI, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 16:24:43 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 16:24:43 +0000</pubDate>
+</item>
+<item>
+<title>EventGPT: Next-Event Pretraining on Banking Customer Histories</title>
+<link>https://arxiv.org/abs/2611.03302</link>
+<guid>https://arxiv.org/abs/2611.03302</guid>
+<content:encoded><![CDATA[
+<div> EventGPT 银行事件预测 分层因果Transformer 无监督预训练 下游任务
+
+<br><br>总结:EventGPT是一种用于预测客户下一个事件的分层因果Transformer。它在包含千万级交易和定位数据的数据集上进行无监督预训练，训练效率高。模型在无标签情况下对首次交易等目标的预测准确率高达0.92，优于需大量标注数据的梯度提升方法。在产品预测任务中，其冻结嵌入虽略逊于工程特征，但作为集成组件能提升性能。代码与权重已开源。 <div>
+A model pretrained to predict a customer's next event can estimate the probability of future events without training on their labels and provide a reusable representation for supervised downstream banking tasks. We pretrain EventGPT, a hierarchical causal transformer, by next-token maximum likelihood estimation on the public Multimodal Banking Dataset (MBD-mini: 100,224 clients, 38.8 million transactions and 66.3 million geolocation pings). Keeping one state per event, EventGPT trains in about two hours on one L4 GPU at windows up to 8,192 tokens. From its next-event distribution, with no labels, EventGPT scores five targets of the form "the client makes a transaction of a given kind for the first time next month" at ROC-AUC 0.79 to 0.92. Gradient boosting on 114 engineered features needs 10,000 to 300,000 labeled client-months to match it on four targets and stays below it on the fifth. For product prediction, frozen EventGPT embeddings score below the engineered features (mean ROC-AUC 0.787 against 0.808 over five test folds), and a rank-averaged ensemble of EventGPT, profile fields and token counts with the engineered features adds 0.014 to 0.017, of which 0.007 to 0.016 is EventGPT's own. The code and pretrained weights are released.
+
+arXiv categories: stat.ML, cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 15:36:23 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 15:36:23 +0000</pubDate>
+</item>
+<item>
+<title>Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation</title>
+<link>https://arxiv.org/abs/2611.03755</link>
+<guid>https://arxiv.org/abs/2611.03755</guid>
+<content:encoded><![CDATA[
+<div> System-1决策模型, 金融校准, 窄域微调, 混合语料补救, 概率预测
+<br><br>总结: 本文针对金融工作流提出System-1决策模型，在K2-Horizon和Qwen系列上验证了0.8B至32B参数模型。研究发现窄域微调会损害通用决策能力，且模型在现实结果问题上表现自然诚实的平坦校准概率。通过混合语料补救，可在保持政策天花板和校准的同时，提升公开基准表现，实现部署。 <div>
+Financial workflows need fast, calibrated, auditable decisions, not just generated text. We train System-1 decision models, small language models fine-tuned to answer typed questions (choice/score/noul) with a probability in a single forward pass, across two model families (K2-Horizon and Qwen3.5/3.8) and nine rungs from 0.8B to 32B parameters, using one frozen LoRA recipe on a public decision benchmark and two new finance corpora: a programmatic-gold policy corpus (rule-reading with exact labels) and a reality-labeled outcome corpus (19,640 realized forward-return questions in walk-forward splits, plus a sealed 2026 test of 1,360 questions). Narrow fine-tuning costs general decision competence 9-45 percentage points, a data-mixture effect that shrinks with model scale and is associated with narrow-gradient volume. On reality-labeled questions, every trained rung from 0.8B to 32B lands at the horizon-conditioned prior baseline (accuracy 0.37-0.38, no detectable conditional edge under our controls); the models respond with flat, well-calibrated probabilities that track per-horizon base rates: naturally honest uncertainty, with a mid-scale calibration sweet spot (ECE 0.026 at 2B, degrading to 0.043-0.044 at 9-32B under prior drift). A mixed-corpus remediation carries all competencies in one adapter at modest cost: it matches or slightly exceeds the generalist specialist on the public benchmark while holding the policy ceiling and near-specialist outcome calibration, yielding a deployable artifact with per-domain temperature regimes and a band-dispatch escalation analysis: sharp, dispatchable bands where rules determine answers; flat, review-routing bands where reality does not.
+
+arXiv categories: cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 11:18:05 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 11:18:05 +0000</pubDate>
+</item>
+<item>
+<title>TensorLOB: Structure-Preserving Tensor Learning for Limit Order Book Forecasting</title>
+<link>https://arxiv.org/abs/2611.02866</link>
+<guid>https://arxiv.org/abs/2611.02866</guid>
+<content:encoded><![CDATA[
+
+The limit order book (LOB) records outstanding buy and sell orders across multiple price levels. Its state evolves over time across market side, price level, and order attribute, naturally forming a multiway structure. However, existing LOB models typically flatten these dimensions into a matrix model, thus obscuring the existing structural relationships. Starting from first principles and the market-microstructure intuition of the LOB, we design TensorLOB to operate entirely in the tensor domain. TensorLOB uses mode-wise tensor contractions for feature extraction and directly contracts the learned representation with low-rank class-weight tensors for prediction, retaining the distinct roles of time, side, level, and attribute modes. Experiments on the FI-2010 benchmark show that TensorLOB achieves the highest accuracy, recall, and F1 score across all four evaluated horizons. This proof of concept highlights the potential of high-dimensional modelling of multi-way latent information intrinsic to financial markets, which has so far been largely overlooked.
+
+arXiv categories: cs.LG, q-fin.ST
+]]></content:encoded>
+<pubDate>Mon, 02 Nov 2026 10:03:43 +0000</pubDate>
+<pubDate>Mon, 02 Nov 2026 10:03:43 +0000</pubDate>
+</item>
+<item>
+<title>Boom-Busty Marketron as a Model of Market Dynamics: How Investor-Market Reflexivity Amplifies Non-Equilibrium</title>
+<link>https://arxiv.org/abs/2611.01185</link>
+<guid>https://arxiv.org/abs/2611.01185</guid>
+<content:encoded><![CDATA[
+
+We introduce the Boom-Busty Marketron, a model of a multi-asset market in which the demand of a single collective investor moves prices and itself depends on market performance. This creates an investor-market reflexive loop in the spirit of Soros's theory. The market state is stationary without being at equilibrium: a non-equilibrium steady state (NESS), with broken detailed balance and a probability current circulating between mispricing, demand and volatility. While stochastic volatility with the leverage effect already breaks detailed balance and makes the market dynamics irreversible, the investor-market loop pushes the market further away from equilibrium. Calibrated to the S\&amp;P 500 from 1996 to 2024 by simulated moments, the model reproduces the stylised facts of returns together with quantitative metrics of the market, including cross-sectional ones, and its return and cycle statistics stay stationary for a century and a half on the 1996--2010 inputs. Its central emergent behaviour is a boom-bust cycle, whose frequency meets the S\&amp;P's within one-sigma ranges. The model also produces a default rate of the order of that of investment-grade issuers, prices inside Fisher Black's factor of two of value, the dumb-money effect of Frazzini and Lamont, and a measurable arrow of time. Standard long-short factors built from its cross section rotate through the cycle, and so do its industry groups along the defensive axis.
+
+arXiv categories: q-fin.ST, nlin.AO, q-fin.GN
+]]></content:encoded>
+<pubDate>Sat, 31 Oct 2026 18:36:48 +0000</pubDate>
+<pubDate>Sat, 31 Oct 2026 18:36:48 +0000</pubDate>
+</item>
 
 <item>
 <title>Do Round Numbers Hold Prices? Occupation Densities and Depth-Conditioned Hazards in the Limit Order Book</title>

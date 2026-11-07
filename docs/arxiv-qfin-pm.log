@@ -90,3 +90,33 @@ Summarized using glm-4.7-flash
 Append: [Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading](https://arxiv.org/abs/2610.32237)
 append_entries: 2
 Finish: 2026-11-01 16:56:26.311224
+------------------------------------------------------
+Started: 2026-11-07 13:51:30.484724
+Existing_entries: 14
+Fetching from file://docs/arxiv-qfin-pm-raw.xml
+Token length: 1501
+Summarized using glm-4.7-flash
+Append: [Constrained defined-contribution pension management: A reparameterized neural network approach](https://arxiv.org/abs/2611.06495)
+Token length: 1713
+Summarized using glm-4.7-flash
+Append: [Mitigating Return Drag and Regime Whipsaws in Sector Rotation: An Asymmetric Downside-Aware Nested Clustered Optimization Framework](https://arxiv.org/abs/2611.05310)
+Token length: 1551
+Summarized using glm-4.7-flash
+Append: [Safe Portfolio Learning from Untrusted Predictions: Signed Trust, Abstention, and Cross-Universe Polarity Failure](https://arxiv.org/abs/2611.04826)
+Token length: 1767
+Summarized using glm-4.7-flash
+Append: [Penalize the Common Trade: A Collision-Aware Layer for Learned Portfolios](https://arxiv.org/abs/2611.03453)
+Token length: 846
+Summarized using glm-4.7-flash
+Append: [Specification LASSO and a Flexible Characteristics-Based Asset Pricing Model](https://arxiv.org/abs/2611.03391)
+Token length: 1951
+Summarized using glm-4.7-flash
+Append: [Interpretable Allocation and Model-Predictive Rebalancing of Equity Portfolios, Tested on Real and Synthetic Markets](https://arxiv.org/abs/2611.03022)
+Token length: 1380
+Summarized using glm-4.7-flash
+Append: [Optimal portfolio and consumption under no-shorting constraints: The exploratory formulation and reinforcement learning](https://arxiv.org/abs/2611.00700)
+Token length: 1909
+Summarized using glm-4.7-flash
+Append: [Non-asymptotic analysis of SGLD with discontinuous stochastic gradients: a new route to portfolio CVaR minimization](https://arxiv.org/abs/2611.00578)
+append_entries: 8
+Finish: 2026-11-07 13:53:26.823383

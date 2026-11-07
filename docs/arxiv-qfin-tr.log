@@ -75,3 +75,27 @@ Summarized using glm-4.7-flash
 Append: [Optimal Size in Market Making under State-Dependent Hawkes Process](https://arxiv.org/abs/2610.31903)
 append_entries: 5
 Finish: 2026-11-01 17:00:57.082602
+------------------------------------------------------
+Started: 2026-11-07 13:54:33.014986
+Existing_entries: 14
+Fetching from file://docs/arxiv-qfin-tr-raw.xml
+Token length: 1895
+Summarized using glm-4.7-flash
+Append: [Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found](https://arxiv.org/abs/2611.06607)
+Token length: 890
+Summarized using glm-4.7-flash
+Append: [Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction](https://arxiv.org/abs/2611.05218)
+Token length: 1049
+Summarized using glm-4.7-flash
+Append: [Learning AI Agents, Market Makers, and Stress in Automated Markets](https://arxiv.org/abs/2611.01799)
+Token length: 1733
+Summarized using glm-4.7-flash
+Append: [AIDA: An AI Outage Registry with Evidence from On-Chain MEV](https://arxiv.org/abs/2611.01656)
+Token length: 1266
+Summarized using glm-4.7-flash
+Append: [Non-Convex Market Makers: Coherence without Convexity, Friction, and Parallel Composition](https://arxiv.org/abs/2611.00502)
+Token length: 1264
+Summarized using glm-4.7-flash
+Append: [Reading the Count: Prediction Markets and Brazil's 2026 Presidential Election](https://arxiv.org/abs/2611.00338)
+append_entries: 6
+Finish: 2026-11-07 13:56:09.959609

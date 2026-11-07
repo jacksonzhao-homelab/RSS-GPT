@@ -101,3 +101,48 @@ Existing_entries: 17
 Fetching from file://docs/arxiv-qfin-st-raw.xml
 append_entries: 0
 Finish: 2026-11-01 16:54:50.365390
+------------------------------------------------------
+Started: 2026-11-07 13:47:28.168864
+Existing_entries: 17
+Fetching from file://docs/arxiv-qfin-st-raw.xml
+Token length: 1861
+Summarized using glm-4.7-flash
+Append: [Neural Realized Measures: Forecast-Supervised Intraday Aggregation for Volatility Forecasting](https://arxiv.org/abs/2611.07287)
+Token length: 349
+Summarized using glm-4.7-flash
+Append: [A general technique for explicit quantile representations](https://arxiv.org/abs/2611.06459)
+Token length: 890
+Summarized using glm-4.7-flash
+Append: [Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction](https://arxiv.org/abs/2611.05218)
+Filter: [How market volatility responds to a preceding price trend: a lag-resolved measurement in cryptocurrencies and equities](https://arxiv.org/abs/2611.04533)
+Token length: 1277
+Summarized using glm-4.7-flash
+Append: [Aggregate Calibration Can Mask Stress-State Undercoverage: Bounded-Memory Forecast Intervals under Recurrent Financial Stress](https://arxiv.org/abs/2611.04223)
+Token length: 1171
+Summarized using glm-4.7-flash
+Append: [Decomposing Rank Reversals under Temporal Nonstationarity: Alignment, Aggressiveness, and Instability](https://arxiv.org/abs/2611.04116)
+Summarization failed, append the original article
+error: Error code: 429 - {'error': {'code': '1305', 'message': '该模型当前访问量过大，请您稍后再试'}}
+Append: [Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds](https://arxiv.org/abs/2611.04070)
+Token length: 1321
+Summarized using glm-4.7-flash
+Append: [PanelGP: A Probabilistic Factor Model for Asset-Return Panels](https://arxiv.org/abs/2611.04040)
+Token length: 1451
+Summarized using glm-4.7-flash
+Append: [Thinking Fast, Trading Late: System One Decision Models vs the Market](https://arxiv.org/abs/2611.03985)
+Token length: 1800
+Summarized using glm-4.7-flash
+Append: [Hardware-Aware Design and Layout Selection in Quantum Reservoir Computing for Insurance Claims Forecasting](https://arxiv.org/abs/2611.03891)
+Token length: 1795
+Summarized using glm-4.7-flash
+Append: [Can We Stop the Backtest Yet? Anytime-Valid Promotion Tests for Adaptive Financial Research Agents](https://arxiv.org/abs/2611.03384)
+Token length: 1301
+Summarized using glm-4.7-flash
+Append: [EventGPT: Next-Event Pretraining on Banking Customer Histories](https://arxiv.org/abs/2611.03302)
+Token length: 1739
+Summarized using glm-4.7-flash
+Append: [Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation](https://arxiv.org/abs/2611.03755)
+Append: [TensorLOB: Structure-Preserving Tensor Learning for Limit Order Book Forecasting](https://arxiv.org/abs/2611.02866)
+Append: [Boom-Busty Marketron as a Model of Market Dynamics: How Investor-Market Reflexivity Amplifies Non-Equilibrium](https://arxiv.org/abs/2611.01185)
+append_entries: 14
+Finish: 2026-11-07 13:51:30.475930
